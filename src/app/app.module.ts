@@ -15,9 +15,9 @@ import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    ContactComponent,
     LandingPageComponent,
     TopBarComponent,
+    ContactComponent,
     LandingTitleComponent
   ],
   imports: [
