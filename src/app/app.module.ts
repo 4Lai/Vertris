@@ -9,6 +9,7 @@ import { ContactComponent } from './shared/components/contact/contact.component'
 import { LandingTitleComponent } from './shared/components/landing-title/landing-title.component';
 import { LandingPageComponent } from './shared/components/landing-page/landing-page.component';
 import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
+import { PopUpLandingComponent } from './shared/components/pop-up-landing/pop-up-landing.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
     LandingPageComponent,
     TopBarComponent,
     ContactComponent,
-    LandingTitleComponent
+    LandingTitleComponent,
+    PopUpLandingComponent
   ],
   imports: [
     BrowserModule,

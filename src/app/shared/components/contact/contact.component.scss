@@ -18,7 +18,7 @@ p {
 
 p:first-child::after {
   content: "";
-  background-color: #f0faff;
+  background-color: #fff;
   width: 1.6rem;
   height: 0.032rem;
   display: inline-block;
@@ -28,7 +28,7 @@ p:first-child::after {
 
 p:last-child::before {
   content: "";
-  background-color: #f0faff;
+  background-color: #fff;
   width: 1.6rem;
   height: 0.032rem;
   display: inline-block;
