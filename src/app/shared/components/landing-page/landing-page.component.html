@@ -4,15 +4,29 @@
   </div>
 
   <div class="landing-page_left">
-    <app-landing-title></app-landing-title>
+    <div class="bgr">
+      <app-landing-title></app-landing-title>
+    </div>
     <app-contact></app-contact>
     <span class="material-symbols-outlined icon">
       keyboard_double_arrow_down
     </span>
   </div>
 
-  <a routerLink="/produkty" class="landing-page_right">
-    <div class="bg"></div>
-    <app-pop-up-landing class="animate"></app-pop-up-landing>
-  </a>
+  <div class="landing-page_right">
+    <a routerLink="" class="rings">
+      <div class="bg"></div>
+      <app-pop-up-landing
+        [title]="'Pierścionki'"
+        class="animate"
+      ></app-pop-up-landing>
+    </a>
+    <a routerLink="" class="earings">
+      <div class="bg"></div>
+      <app-pop-up-landing
+        [title]="'Kolczyki'"
+        class="animate1"
+      ></app-pop-up-landing>
+    </a>
+  </div>
 </section>
