@@ -1,0 +1,18 @@
+<section class="recommended">
+  <span class="material-symbols-outlined icon-left" (click)="previous()"> chevron_left </span>
+  <div class="recommended-container">
+    <h1 class="recommended-container_title">{{ "wybrane dla ciebie" | uppercase }}</h1>
+    <div class="single-product-container">
+      <app-single-product
+        *ngFor="let product of recommendedProducts"
+        [productTitle]="product.productTitle"
+        [type]="product.type"
+        [price]="product.price"
+        [productImage]="product.productImage"
+        [bestseller]="product.bestseller"
+        class="i"
+      ></app-single-product>
+    </div>
+  </div>
+  <span class="material-symbols-outlined icon-right" (click)="next()"> chevron_right </span>
+</section>

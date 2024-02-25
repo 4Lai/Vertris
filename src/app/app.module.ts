@@ -10,6 +10,8 @@ import { LandingTitleComponent } from './shared/components/landing-title/landing
 import { LandingPageComponent } from './shared/components/landing-page/landing-page.component';
 import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
 import { PopUpLandingComponent } from './shared/components/pop-up-landing/pop-up-landing.component';
+import { SingleProductComponent } from './shared/components/single-product/single-product.component';
+import { RecommendedForYouComponent } from './shared/components/recommended-for-you/recommended-for-you.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PopUpLandingComponent } from './shared/components/pop-up-landing/pop-up
     TopBarComponent,
     ContactComponent,
     LandingTitleComponent,
-    PopUpLandingComponent
+    PopUpLandingComponent,
+    SingleProductComponent,
+    RecommendedForYouComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<div class="single-product">
+  <a routerLink="" class="single-product_link">
+    <div class="p-relative">
+      <p class="single-product_link-bestseller" *ngIf="bestseller === true">
+        BESTSELLER
+      </p>
+      <img class="single-product_link-img" src="{{ productImage }}" alt="" />
+    </div>
+  </a>
+  <a routerLink="" class="single-product_seclink">
+    <h6 class="single-product_seclink-title">{{ productTitle | uppercase }}</h6>
+    <p class="single-product_seclink-type">{{ type | uppercase }}</p>
+  </a>
+  <p class="single-product_price">{{ price }} zł</p>
+</div>
