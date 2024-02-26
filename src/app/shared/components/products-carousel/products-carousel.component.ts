@@ -1,13 +1,15 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { RecommendedForYouService } from '../../services/recommended-for-you.service';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { SingleProduct } from '../../interfaces/single-product';
 
 @Component({
-  selector: 'app-recommended-for-you',
-  templateUrl: './recommended-for-you.component.html',
-  styleUrls: ['./recommended-for-you.component.scss'],
+  selector: 'app-products-carousel',
+  templateUrl: './products-carousel.component.html',
+  styleUrls: ['./products-carousel.component.scss'],
 })
-export class RecommendedForYouComponent implements OnInit {
+export class ProductsCarouselComponent implements OnInit {
+  @Input() indexOfClass: number = 0;
+  @Input() sectionTitle: string = '';
+  @Input() arrProd: SingleProduct[] = [];
   gridAutoColumnsPercentage: any;
   screenWidth: any;
   @HostListener('window:resize', ['$event'])
@@ -20,7 +22,7 @@ export class RecommendedForYouComponent implements OnInit {
       this.startPos = 1;
       this.curSlide = 1;
       this.gridAutoColumnsPercentage = 100;
-      this.curPos = 0
+      this.curPos = 0;
       grid.style.transform = `translateX(${this.curPos}%)`;
     }
     if (this.screenWidth >= 501 && this.screenWidth <= 800) {
@@ -45,17 +47,16 @@ export class RecommendedForYouComponent implements OnInit {
       grid.style.transform = `translateX(${this.curPos}%)`;
     }
   }
+
   startPos: number = 0;
   curPos: number = 0;
   curSlide: number = 0;
   numberOfItems: number = 0;
-  recommendedProducts: SingleProduct[] = [];
 
-  constructor(private recommended: RecommendedForYouService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.recommendedProducts = this.recommended.recommended;
-    this.numberOfItems = this.recommendedProducts.length;
+    this.numberOfItems = this.arrProd.length;
     this.screenWidth = window.innerWidth;
     if (this.screenWidth <= 500) {
       this.startPos = 1;
@@ -81,25 +82,24 @@ export class RecommendedForYouComponent implements OnInit {
 
   next() {
     this.curSlide++;
-    let grid = document.querySelector(
-      '.single-product-container'
-    ) as HTMLDivElement;
+    let grid = document.querySelectorAll('.single-product-container')[
+      this.indexOfClass
+    ] as HTMLDivElement;
     if (this.curSlide > this.numberOfItems) {
       this.curSlide = 0;
       this.curPos = 0;
       grid.style.transform = `translateX(${this.curPos}%)`;
     } else {
       this.curPos -= this.gridAutoColumnsPercentage;
-      console.log(this.curPos);
       grid.style.transform = `translateX(${this.curPos}%)`;
     }
   }
 
   previous() {
     this.curSlide--;
-    let grid = document.querySelector(
-      '.single-product-container'
-    ) as HTMLDivElement;
+    let grid = document.querySelectorAll('.single-product-container')[
+      this.indexOfClass
+    ] as HTMLDivElement;
     if (this.curSlide < this.startPos) {
       this.curSlide = this.numberOfItems;
       this.curPos =

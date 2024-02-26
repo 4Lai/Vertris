@@ -1,16 +1,16 @@
-<section class="recommended">
+<section class="products-carousel">
   <span class="material-symbols-outlined icon-left" (click)="previous()"> chevron_left </span>
-  <div class="recommended-container">
-    <h1 class="recommended-container_title">{{ "wybrane dla ciebie" | uppercase }}</h1>
+  <div class="products-carousel-container">
+    <h1 class="products-carousel-container_title">{{ sectionTitle | uppercase }}</h1>
     <div class="single-product-container">
       <app-single-product
-        *ngFor="let product of recommendedProducts"
+        *ngFor="let product of arrProd"
         [productTitle]="product.productTitle"
         [type]="product.type"
         [price]="product.price"
         [productImage]="product.productImage"
         [bestseller]="product.bestseller"
-        class="i"
+        [id]="product.id"
       ></app-single-product>
     </div>
   </div>

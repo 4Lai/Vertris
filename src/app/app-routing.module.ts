@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { recommendedForYouResolver } from './shared/resolvers/recommended-for-you.resolver';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-  {path: '**', component: NotFoundComponent}
+  {
+    path: '',
+    component: HomeComponent,
+    pathMatch: 'full',
+    resolve: { recForYou: recommendedForYouResolver },
+  },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

@@ -10,5 +10,6 @@ export class SingleProductComponent {
   @Input() type: string = '';
   @Input() price: string = '';
   @Input() productImage: string = '';
+  @Input() id: number = 0;
   @Input() bestseller?: boolean = false;
 }

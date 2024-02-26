@@ -11,7 +11,7 @@ import { LandingPageComponent } from './shared/components/landing-page/landing-p
 import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
 import { PopUpLandingComponent } from './shared/components/pop-up-landing/pop-up-landing.component';
 import { SingleProductComponent } from './shared/components/single-product/single-product.component';
-import { RecommendedForYouComponent } from './shared/components/recommended-for-you/recommended-for-you.component';
+import { ProductsCarouselComponent } from './shared/components/products-carousel/products-carousel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { RecommendedForYouComponent } from './shared/components/recommended-for-
     LandingTitleComponent,
     PopUpLandingComponent,
     SingleProductComponent,
-    RecommendedForYouComponent
+    ProductsCarouselComponent
   ],
   imports: [
     BrowserModule,
