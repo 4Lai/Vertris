@@ -1,8 +1,10 @@
 export interface SingleProduct {
   productTitle: string;
   type: string;
-  price: string;
+  price: number;
   productImage: string;
   id: number;
-  bestseller?: boolean;
+  discountValue: number;
+  discount: boolean
+  bestseller: boolean;
 }

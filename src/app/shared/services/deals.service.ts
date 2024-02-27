@@ -4,18 +4,18 @@ import { SingleProduct } from '../interfaces/single-product';
 @Injectable({
   providedIn: 'root',
 })
-export class RecommendedForYouService {
+export class DealsService {
   constructor() {}
 
-  recommended: SingleProduct[] = [
+  deals: SingleProduct[] = [
     {
       productTitle: 'kolczyki 2.0 cm',
       type: 'pozłacany',
       price: 299,
       productImage: '../../../../assets/imgs/recommended/earings.jpg',
       id: 1,
-      discount: false,
-      discountValue: 0,
+      discount: true,
+      discountValue: 20,
       bestseller: false,
     },
     {
@@ -24,9 +24,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'pierścień',
@@ -34,9 +34,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'pierścień',
@@ -44,9 +44,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'pierścień',
@@ -54,9 +54,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'pierścień',
@@ -64,9 +64,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'pierścień',
@@ -74,9 +74,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'pierścień',
@@ -84,9 +84,9 @@ export class RecommendedForYouService {
       price: 189,
       productImage: '../../../../assets/imgs/recommended/ring.jpg',
       id: 2,
-      discount: false,
-      discountValue: 0,
-      bestseller: true,
+      discount: true,
+      discountValue: 20,
+      bestseller: false,
     },
     {
       productTitle: 'kolczyki 2.0 cm',
@@ -94,8 +94,8 @@ export class RecommendedForYouService {
       price: 299,
       productImage: '../../../../assets/imgs/recommended/earings.jpg',
       id: 1,
-      discount: false,
-      discountValue: 0,
+      discount: true,
+      discountValue: 20,
       bestseller: false,
     },
   ];

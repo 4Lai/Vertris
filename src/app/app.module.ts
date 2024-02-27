@@ -12,6 +12,7 @@ import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
 import { PopUpLandingComponent } from './shared/components/pop-up-landing/pop-up-landing.component';
 import { SingleProductComponent } from './shared/components/single-product/single-product.component';
 import { ProductsCarouselComponent } from './shared/components/products-carousel/products-carousel.component';
+import { NewCollectionComponent } from './shared/components/new-collection/new-collection.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductsCarouselComponent } from './shared/components/products-carousel
     LandingTitleComponent,
     PopUpLandingComponent,
     SingleProductComponent,
-    ProductsCarouselComponent
+    ProductsCarouselComponent,
+    NewCollectionComponent
   ],
   imports: [
     BrowserModule,

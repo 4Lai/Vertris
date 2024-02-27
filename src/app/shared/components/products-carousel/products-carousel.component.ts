@@ -15,9 +15,9 @@ export class ProductsCarouselComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.screenWidth = window.innerWidth;
-    let grid = document.querySelector(
+    let grid = document.querySelectorAll(
       '.single-product-container'
-    ) as HTMLDivElement;
+    )[this.indexOfClass] as HTMLDivElement;
     if (this.screenWidth <= 500) {
       this.startPos = 1;
       this.curSlide = 1;
@@ -86,7 +86,7 @@ export class ProductsCarouselComponent implements OnInit {
       this.indexOfClass
     ] as HTMLDivElement;
     if (this.curSlide > this.numberOfItems) {
-      this.curSlide = 0;
+      this.curSlide = this.startPos;
       this.curPos = 0;
       grid.style.transform = `translateX(${this.curPos}%)`;
     } else {

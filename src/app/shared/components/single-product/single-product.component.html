@@ -1,15 +1,26 @@
 <div class="single-product">
-  <a routerLink="/{{id}}" class="single-product_link">
+  <a routerLink="/{{ id }}" class="single-product_link">
     <div class="p-relative">
       <p class="single-product_link-bestseller" *ngIf="bestseller === true">
         BESTSELLER
       </p>
+      <p class="single-product_link-discount" *ngIf="discount === true">
+        -{{ discountValue }}%
+      </p>
       <img class="single-product_link-img" src="{{ productImage }}" alt="" />
     </div>
   </a>
-  <a routerLink="" class="single-product_seclink">
+  <a routerLink="/{{ id }}" class="single-product_seclink">
     <h6 class="single-product_seclink-title">{{ productTitle | uppercase }}</h6>
     <p class="single-product_seclink-type">{{ type | uppercase }}</p>
   </a>
-  <p class="single-product_price">{{ price }} zł</p>
+  <div class="spacing">
+    <p
+      class="single-product_price"
+      [ngClass]="{ 'cross-out': discount === true }"
+    >
+      {{ price | number : "1.2-2" }} zł
+    </p>
+    <p *ngIf="discount === true" class="single-product_new-price">{{ newPrice | number : "1.2-2" }} zł</p>
+  </div>
 </div>

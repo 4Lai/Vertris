@@ -8,12 +8,10 @@ import { SingleProduct } from 'src/app/shared/interfaces/single-product';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  recForYou: SingleProduct[] = this.activatedRoute.snapshot.data['recForYou']
+  recForYou: SingleProduct[] = this.activatedRoute.snapshot.data['recForYou'];
+  deals: SingleProduct[] = this.activatedRoute.snapshot.data['deals'];
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-  ) {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }
