@@ -13,6 +13,8 @@ import { PopUpLandingComponent } from './shared/components/pop-up-landing/pop-up
 import { SingleProductComponent } from './shared/components/single-product/single-product.component';
 import { ProductsCarouselComponent } from './shared/components/products-carousel/products-carousel.component';
 import { NewCollectionComponent } from './shared/components/new-collection/new-collection.component';
+import { GiftCardsComponent } from './shared/components/gift-cards/gift-cards.component';
+import { GiftCardComponent } from './shared/components/gift-card/gift-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { NewCollectionComponent } from './shared/components/new-collection/new-c
     PopUpLandingComponent,
     SingleProductComponent,
     ProductsCarouselComponent,
-    NewCollectionComponent
+    NewCollectionComponent,
+    GiftCardsComponent,
+    GiftCardComponent
   ],
   imports: [
     BrowserModule,

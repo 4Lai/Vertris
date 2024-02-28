@@ -1,0 +1,25 @@
+<section class="gift-cards">
+  <div class="spacing">
+    <div class="gift-cards_left-container">
+      <h1 class="gift-cards_left-container_title">
+        {{ "karta podarunkowa" | uppercase }}
+      </h1>
+      <p class="gift-cards_left-container_text">
+        Nie masz pomysłu na prezent? Przychodzimy z pomocą! Z naszą kartą
+        podarunkową masz pewność, że trafisz z prezentem.
+      </p>
+      <button class="gift-cards_left-container_button">
+        <a class="gift-cards_left-container_button-link" routerLink="/karty-podarunkowe">{{
+          "sprawdź karty" | uppercase
+        }}</a>
+      </button>
+    </div>
+    <div class="gift-cards_right-container">
+      <div class="gift-cards_right-container-inner">
+        <app-gift-card [value]="100" class="grid-1"></app-gift-card>
+        <app-gift-card [value]="250" class="grid-2"></app-gift-card>
+        <app-gift-card [value]="500" class="grid-3"></app-gift-card>
+      </div>
+    </div>
+  </div>
+</section>

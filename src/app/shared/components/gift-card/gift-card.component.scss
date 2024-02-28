@@ -1,0 +1,130 @@
+.gift-card {
+  &_container {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    pointer-events: none;
+    width: 325px;
+    height: 175px;
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url("../../../../assets/imgs/gift-cards/gift-card-bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    -webkit-box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 1);
+    &-img {
+      z-index: 9;
+      position: absolute;
+      top: 2%;
+      right: 5%;
+      width: 35%;
+    }
+    &-rib-ver {
+      position: absolute;
+      width: 20px;
+      height: 210px;
+      background-color: red;
+      right: 19%;
+    }
+    &-rib-hor {
+      position: absolute;
+      width: 500px;
+      height: 20px;
+      background-color: red;
+      top: 13%;
+    }
+    &-textc {
+      left: 8%;
+      top: 25%;
+      position: absolute;
+      display: grid;
+      align-items: center;
+      text-align: center;
+      background-color: red;
+      padding: 2rem;
+      border-radius: 50%;
+      &_title {
+        font-weight: 700;
+        font-size: 4rem;
+        color: #fff;
+        font-family: "Lobster", sans-serif;
+      }
+      &_price {
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #fff;
+      }
+      &_text {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .gift-card {
+    transform: scale(0.6);
+  }
+}
+
+@media (min-width: 376px) and (max-width: 460px) {
+  .gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.6);
+  }
+}
+
+@media (min-width: 461px) and (max-width: 560px) {
+  .gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+  }
+}
+
+@media (min-width: 561px) and (max-width: 700px) {
+  .gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .gift-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1750px) {
+  .gift-card {
+    transform: scale(0.7);
+  }
+}
