@@ -1,0 +1,13 @@
+<section class="see-also">
+  <div class="see-also-container">
+    <h1 class="see-also-container_title">{{ "zobacz również" | uppercase }}</h1>
+    <div class="see-also-container_content">
+      <app-see-also-single
+        *ngFor="let box of contentArr"
+        [imgUrl]="box.imgUrl"
+        [title]="box.title"
+        [path]="box.path"
+      ></app-see-also-single>
+    </div>
+  </div>
+</section>

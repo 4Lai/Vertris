@@ -15,6 +15,8 @@ import { ProductsCarouselComponent } from './shared/components/products-carousel
 import { NewCollectionComponent } from './shared/components/new-collection/new-collection.component';
 import { GiftCardsComponent } from './shared/components/gift-cards/gift-cards.component';
 import { GiftCardComponent } from './shared/components/gift-card/gift-card.component';
+import { SeeAlsoComponent } from './shared/components/see-also/see-also.component';
+import { SeeAlsoSingleComponent } from './shared/components/see-also-single/see-also-single.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { GiftCardComponent } from './shared/components/gift-card/gift-card.compo
     ProductsCarouselComponent,
     NewCollectionComponent,
     GiftCardsComponent,
-    GiftCardComponent
+    GiftCardComponent,
+    SeeAlsoComponent,
+    SeeAlsoSingleComponent
   ],
   imports: [
     BrowserModule,
