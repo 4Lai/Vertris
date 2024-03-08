@@ -1,0 +1,24 @@
+<section class="news">
+  <div class="news-header">
+    <h1 class="news-header_title">{{ "nowości" | uppercase }}</h1>
+  </div>
+  
+  <div class="news-main">
+      <app-news-single
+      *ngFor="let product of newsArr; let i = index"
+      [title]="product.productTitle"
+      [id]="product.id"
+      [price]="product.price"
+      [type]="product.type"
+      [img]="product.productImage"
+      [reversed]="i + 1"
+      ></app-news-single>
+    </div>
+    
+    <a routerLink="/nowości" class="news-footer_link" (mouseleave)="onLeave()">
+      <p class="news-footer_link_title">{{ "przejdź do nowości" | uppercase }}</p>
+      <span class="material-symbols-outlined news-footer_link_icon">
+        arrow_right_alt
+      </span>
+    </a>
+</section>

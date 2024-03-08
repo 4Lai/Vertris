@@ -1,0 +1,15 @@
+<a
+  routerLink="/{{ id }}"
+  class="news-single"
+  [ngClass]="reversed % 2 === 0 ? 'even' : 'odd'"
+>
+  <div class="news-single-left">
+    <img class="news-single-left_img" src="{{ img }}" alt="" />
+  </div>
+  <div class="news-single-right">
+    <p class="news-single-right_title">{{ title | uppercase }}</p>
+    <p class="news-single-right_type">{{ type | uppercase }}</p>
+    <p class="news-single-right_price">{{ price | number : "1.2-2" }} zł</p>
+    <button class="news-single-right_btn">{{ "sprawdź" | uppercase }}</button>
+  </div>
+</a>

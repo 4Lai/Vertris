@@ -20,6 +20,8 @@ import { SeeAlsoSingleComponent } from './shared/components/see-also-single/see-
 import { AdventagesComponent } from './shared/components/adventages/adventages.component';
 import { IconAdventagesComponent } from './shared/components/icon-adventages/icon-adventages.component';
 import { CapFirstPipe } from './shared/pipes/cap-first.pipe';
+import { NewsComponent } from './shared/components/news/news.component';
+import { NewsSingleComponent } from './shared/components/news-single/news-single.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { CapFirstPipe } from './shared/pipes/cap-first.pipe';
     SeeAlsoSingleComponent,
     AdventagesComponent,
     IconAdventagesComponent,
-    CapFirstPipe
+    CapFirstPipe,
+    NewsComponent,
+    NewsSingleComponent
   ],
   imports: [
     BrowserModule,
