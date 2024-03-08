@@ -32,10 +32,7 @@
         }
         .news-footer_link_icon {
           color: red;
-          animation-name: animation;
-          animation-duration: 0.5s;
-          animation-timing-function: linear;
-          animation-fill-mode: forwards;
+          transform: translateX(15%);
         }
       }
       &_title {
@@ -46,56 +43,11 @@
         transition: 0.5s all;
       }
       &_icon {
-        opacity: 1;
         font-size: 3.6rem;
         color: #000;
+        transition: 0.5s all;
       }
     }
-  }
-}
-
-.animLeave {
-  animation-name: animation2;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes animation {
-  0% {
-  }
-  25% {
-    transform: rotate(-45deg);
-  }
-  50% {
-    transform: translateY(-25%) rotate(-90deg);
-  }
-  75% {
-    transform: translateY(-50%) rotate(-90deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(-90deg) translateY(-50%);
-    opacity: 0;
-  }
-}
-
-@keyframes animation2 {
-  0% {
-    transform: rotate(-90deg) translateY(-50%);
-    opacity: 0;
-  }
-  25% {
-    transform: translateY(-50%) rotate(-90deg);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-25%) rotate(-90deg);
-  }
-  75% {
-    transform: rotate(-45deg);
-  }
-  100% {
   }
 }
 

@@ -15,10 +15,4 @@ export class NewsComponent implements OnInit {
     this.newsArr = this.newsService.newsArr;
   }
 
-  onLeave() {
-    let link = document.querySelector(
-      '.news-footer_link_icon'
-    ) as HTMLSpanElement;
-    link.classList.add('animLeave');
-  }
 }
