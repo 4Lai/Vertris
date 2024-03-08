@@ -1,0 +1,15 @@
+<section class="adventages">
+  <div class="adventages-container">
+    <div class="adventages-container_title">
+      <h1>{{ "dlaczego my?" | uppercase }}</h1>
+    </div>
+    <div class="adventages-container_content">
+      <app-icon-adventages
+        *ngFor="let el of adventagesArr; let i = index"
+        [iconName]="el.iconN"
+        [title]="el.text"
+        class="grid-{{ i + 1 }}"
+      ></app-icon-adventages>
+    </div>
+  </div>
+</section>

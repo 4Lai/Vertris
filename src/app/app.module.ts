@@ -17,6 +17,9 @@ import { GiftCardsComponent } from './shared/components/gift-cards/gift-cards.co
 import { GiftCardComponent } from './shared/components/gift-card/gift-card.component';
 import { SeeAlsoComponent } from './shared/components/see-also/see-also.component';
 import { SeeAlsoSingleComponent } from './shared/components/see-also-single/see-also-single.component';
+import { AdventagesComponent } from './shared/components/adventages/adventages.component';
+import { IconAdventagesComponent } from './shared/components/icon-adventages/icon-adventages.component';
+import { CapFirstPipe } from './shared/pipes/cap-first.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { SeeAlsoSingleComponent } from './shared/components/see-also-single/see-
     GiftCardsComponent,
     GiftCardComponent,
     SeeAlsoComponent,
-    SeeAlsoSingleComponent
+    SeeAlsoSingleComponent,
+    AdventagesComponent,
+    IconAdventagesComponent,
+    CapFirstPipe
   ],
   imports: [
     BrowserModule,
