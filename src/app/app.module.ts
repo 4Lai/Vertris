@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponent } from './shared/components/contact/contact.component';
@@ -22,6 +23,10 @@ import { IconAdventagesComponent } from './shared/components/icon-adventages/ico
 import { CapFirstPipe } from './shared/pipes/cap-first.pipe';
 import { NewsComponent } from './shared/components/news/news.component';
 import { NewsSingleComponent } from './shared/components/news-single/news-single.component';
+import { NewsletterComponent } from './shared/components/newsletter/newsletter.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { FooterSingleSectionComponent } from './shared/components/footer-single-section/footer-single-section.component';
+import { MadeByComponent } from './shared/components/made-by/made-by.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +49,16 @@ import { NewsSingleComponent } from './shared/components/news-single/news-single
     IconAdventagesComponent,
     CapFirstPipe,
     NewsComponent,
-    NewsSingleComponent
+    NewsSingleComponent,
+    NewsletterComponent,
+    FooterComponent,
+    FooterSingleSectionComponent,
+    MadeByComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

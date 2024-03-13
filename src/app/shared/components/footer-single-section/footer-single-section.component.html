@@ -1,0 +1,11 @@
+<li class="footer-single-section">
+  <h1 class="footer-single-section_title">{{ array[0].title | capFirst }}</h1>
+  <div class="footer-single-section_link-container">
+    <a
+      *ngFor="let link of array[0].data"
+      class="footer-single-section_link-container_link"
+      routerLink="{{ link.link }}"
+      >{{ link.subtitle | capFirst }}</a
+    >
+  </div>
+</li>

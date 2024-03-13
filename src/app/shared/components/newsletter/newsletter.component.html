@@ -1,0 +1,24 @@
+<section class="newsletter">
+  <div class="newsletter-header">
+    <h1 class="newsletter-header_title">{{ "Dołącz do " }} <span class="newsletter-header_title gold">{{"newslettera"}}</span></h1>
+    <p class="newsletter-header_text">
+      {{ "Zawsze bądź na bieżąco z najnowszymi ofertami i promocjami" }}
+    </p>
+  </div>
+
+  <form
+    class="newsletter-form"
+    [formGroup]="newsletterForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <input
+      class="newsletter-form_input"
+      type="text"
+      formControlName="email"
+      placeholder="adres email"
+    />
+    <button class="newsletter-form_btn" type="submit">
+      {{ "wyślij" | uppercase }}
+    </button>
+  </form>
+</section>

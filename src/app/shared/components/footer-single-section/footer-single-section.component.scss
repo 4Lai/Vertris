@@ -1,0 +1,25 @@
+.footer-single-section {
+  &_title {
+    color: #000;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+  }
+  &_link-container {
+    display: grid;
+    row-gap: 1rem;
+    &_link {
+      font-weight: 200;
+      //   width: 150px;
+      width: fit-content;
+      text-decoration: none;
+      color: #000;
+      font-size: 1.6rem;
+      transition: 0.5s all;
+      max-width: 200px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

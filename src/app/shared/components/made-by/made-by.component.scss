@@ -1,0 +1,13 @@
+.made-by {
+  background-color: #000;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-title {
+    color: #fff;
+    font-size: 1.6rem;
+    width: fit-content;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,42 @@
+<section class="footer">
+  <div class="footer-o">
+    <div class="footer-header">
+      <img
+      class="footer-header_img"
+      src="../../../../assets/imgs/logo/logo.png"
+      alt=""
+      />
+      <h1 class="footer-header_title">Vertris</h1>
+    </div>
+  </div>
+
+
+  <div class="footer-container">
+    <div>
+      <hr />
+
+      <div>
+        <ul class="list">
+          <app-footer-single-section
+            [array]="aboutUs"
+          ></app-footer-single-section>
+          <app-footer-single-section
+            [array]="offers"
+          ></app-footer-single-section>
+          <app-footer-single-section
+            [array]="customerService"
+          ></app-footer-single-section>
+          <app-footer-single-section
+            [array]="contact"
+          ></app-footer-single-section>
+          <app-footer-single-section
+            [array]="regulations"
+          ></app-footer-single-section>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <app-newsletter></app-newsletter>
+    </div>
+  </div>
+</section>
