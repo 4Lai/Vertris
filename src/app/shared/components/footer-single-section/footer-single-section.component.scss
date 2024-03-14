@@ -4,6 +4,17 @@
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     width: fit-content;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    transition: 1s all;
+    cursor: pointer;
+    &:hover {
+      color: red;
+      .icon {
+        color: red;
+      }
+    }
   }
   &_link-container {
     display: grid;
@@ -17,9 +28,22 @@
       font-size: 1.6rem;
       transition: 0.5s all;
       max-width: 200px;
+      &:last-child {
+        margin-bottom: 1.5rem;
+      }
       &:hover {
         color: red;
       }
     }
   }
+}
+
+.icon {
+  color: #000;
+  font-size: 2.6rem;
+  transition: 1s all;
+}
+
+.hidden {
+  display: none;
 }

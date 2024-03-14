@@ -1,6 +1,19 @@
-<li class="footer-single-section">
-  <h1 class="footer-single-section_title">{{ array[0].title | capFirst }}</h1>
-  <div class="footer-single-section_link-container">
+<div class="footer-single-section">
+  <h1 *ngIf="shouldBeExpanded === true; else sec" class="footer-single-section_title" (click)="expand()">
+    {{ array[0].title | capFirst }}
+    <span class="material-symbols-outlined icon">
+      {{ ex === false ? "expand_more" : "expand_less" }}
+    </span>
+  </h1>
+  <ng-template #sec>
+      <h1 class="footer-single-section_title">
+    {{ array[0].title | capFirst }}
+  </h1>
+  </ng-template>
+  <div
+    class="footer-single-section_link-container"
+    [ngClass]="{ hidden: ex === false && shouldBeExpanded === true }"
+  >
     <a
       *ngFor="let link of array[0].data"
       class="footer-single-section_link-container_link"
@@ -8,4 +21,4 @@
       >{{ link.subtitle | capFirst }}</a
     >
   </div>
-</li>
+</div>
