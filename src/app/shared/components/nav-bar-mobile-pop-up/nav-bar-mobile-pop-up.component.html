@@ -1,0 +1,7 @@
+<section class="pop-up" [ngClass]="{ hidden: hidden === false }">
+  <ul class="pop-up-list">
+    <a class="pop-up-list-link" *ngFor="let link of dataArr" href="{{ link.link }}"
+      ><li class="pop-up-list-link-li">{{ link.text | uppercase }}</li></a
+    >
+  </ul>
+</section>

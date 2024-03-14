@@ -1,0 +1,38 @@
+.pop-up {
+  z-index: 99999999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s all;
+  &-list {
+    margin: auto auto;
+    width: calc(100% - 3.2rem);
+    height: 100%;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    &-link {
+      cursor: pointer;
+      font-size: 4rem;
+      text-decoration: none;
+      &-li {
+        font-weight: 200;
+        transition: 1s all;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s all;
+}

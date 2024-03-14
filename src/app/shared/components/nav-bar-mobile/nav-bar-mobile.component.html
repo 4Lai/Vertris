@@ -1,0 +1,32 @@
+<nav
+  class="nav-bar"
+  [ngClass]="{
+    changeBg: windowHeight >= 1 && openWindow === false,
+    changeBg2: openWindow === true
+  }"
+>
+  <div class="nav-bar-container">
+    <img
+      class="nav-bar-container_image"
+      src="../../../../assets/imgs/logo/logo.png"
+      alt="Logo"
+    />
+    <p
+      class="nav-bar-container_title"
+      [ngClass]="{ changeCol: windowHeight >= 1 && openWindow === false }"
+    >
+      Vertris
+    </p>
+  </div>
+
+  <div>
+    <span
+      (click)="onClick()"
+      class="material-symbols-outlined icon"
+      [ngClass]="{ changeCol: windowHeight >= 1 && openWindow === false }"
+    >
+      {{ !openWindow ? "menu" : "close" }}
+    </span>
+  </div>
+</nav>
+<app-nav-bar-mobile-pop-up [hidden]="openWindow"></app-nav-bar-mobile-pop-up>

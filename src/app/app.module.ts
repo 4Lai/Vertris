@@ -27,6 +27,9 @@ import { NewsletterComponent } from './shared/components/newsletter/newsletter.c
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { FooterSingleSectionComponent } from './shared/components/footer-single-section/footer-single-section.component';
 import { MadeByComponent } from './shared/components/made-by/made-by.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { NavBarMobileComponent } from './shared/components/nav-bar-mobile/nav-bar-mobile.component';
+import { NavBarMobilePopUpComponent } from './shared/components/nav-bar-mobile-pop-up/nav-bar-mobile-pop-up.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,10 @@ import { MadeByComponent } from './shared/components/made-by/made-by.component';
     NewsletterComponent,
     FooterComponent,
     FooterSingleSectionComponent,
-    MadeByComponent
+    MadeByComponent,
+    NavBarComponent,
+    NavBarMobileComponent,
+    NavBarMobilePopUpComponent
   ],
   imports: [
     BrowserModule,
