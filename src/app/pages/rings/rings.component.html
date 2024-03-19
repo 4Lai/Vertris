@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<section class="rings">
+  <div class="rings-header">
+    <h1>{{ title | uppercase }}</h1>
+    <p>{{ ringsArr.length }} wyników</p>
+  </div>
+  <div>
+    <app-product-list [prodArr]="ringsArr"></app-product-list>
+  </div>
+</section>
+<app-footer></app-footer>
+<app-made-by></app-made-by>

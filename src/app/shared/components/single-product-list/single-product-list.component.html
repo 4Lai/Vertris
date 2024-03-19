@@ -1,0 +1,46 @@
+<li class="single-product-list">
+  <a class="single-product-list_link" routerLink="{{ id }}">
+    <div class="single-product-list_link_img-container">
+      <p
+        class="single-product-list_link_img-container-bestseller"
+        *ngIf="bestseller === true"
+      >
+        {{ "bestseller" | uppercase }}
+      </p>
+      <p
+        class="single-product-list_link_img-container-discount"
+        *ngIf="discount === true"
+      >
+        -{{ discountValue }}%
+      </p>
+      <img
+        class="single-product-list_link_img-container-img"
+        src="{{ productImage }}"
+        alt=""
+      />
+    </div>
+
+    <div class="single-product-list_link_content-container">
+      <h6 class="single-product-list_link_content-container-title">
+        {{ productTitle | uppercase }}
+      </h6>
+      <p class="single-product-list_link_content-container-type">
+        {{ type | uppercase }}
+      </p>
+      <div class="spacing">
+        <p
+          [ngClass]="{ 'cross-out': discount === true }"
+          class="single-product-list_link_content-container-price"
+        >
+          {{ price | number : "1.2-2" }} zł
+        </p>
+        <p
+          *ngIf="discount === true"
+          class="single-product-list_link_content-container-price"
+        >
+          {{ newPrice | number : "1.2-2" }} zł
+        </p>
+      </div>
+    </div>
+  </a>
+</li>

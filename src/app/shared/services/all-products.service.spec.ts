@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LandingPageService } from './landing-page.service';
+import { AllProductsService } from './all-products.service';
 
-describe('LandingPageService', () => {
-  let service: LandingPageService;
+describe('AllProductsService', () => {
+  let service: AllProductsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(LandingPageService);
+    service = TestBed.inject(AllProductsService);
   });
 
   it('should be created', () => {

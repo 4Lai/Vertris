@@ -30,6 +30,14 @@ import { MadeByComponent } from './shared/components/made-by/made-by.component';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './shared/components/nav-bar-mobile/nav-bar-mobile.component';
 import { NavBarMobilePopUpComponent } from './shared/components/nav-bar-mobile-pop-up/nav-bar-mobile-pop-up.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ProductListComponent } from './shared/components/product-list/product-list.component';
+import { SingleProductListComponent } from './shared/components/single-product-list/single-product-list.component';
+import { RingsComponent } from './pages/rings/rings.component';
+import { EaringsComponent } from './pages/earings/earings.component';
+import { NecklacesComponent } from './pages/necklaces/necklaces.component';
+import { WatchesComponent } from './pages/watches/watches.component';
+import { AccessoriesComponent } from './pages/accessories/accessories.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +67,15 @@ import { NavBarMobilePopUpComponent } from './shared/components/nav-bar-mobile-p
     MadeByComponent,
     NavBarComponent,
     NavBarMobileComponent,
-    NavBarMobilePopUpComponent
+    NavBarMobilePopUpComponent,
+    ProductsComponent,
+    ProductListComponent,
+    SingleProductListComponent,
+    RingsComponent,
+    EaringsComponent,
+    NecklacesComponent,
+    WatchesComponent,
+    AccessoriesComponent,
   ],
   imports: [
     BrowserModule,

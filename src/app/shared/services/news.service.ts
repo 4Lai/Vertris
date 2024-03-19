@@ -13,28 +13,28 @@ export class NewsService {
       type: 'złoty',
       price: 549,
       productImage: '../assets/imgs/news/news1.jpg',
-      id: 1,
+      id: 1001,
     },
     {
       productTitle: 'naszyjnik',
       type: 'złoty',
       price: 179,
       productImage: '../assets/imgs/news/news2.jpg',
-      id: 2,
+      id: 10001,
     },
     {
       productTitle: 'pierścień',
       type: 'złoty',
       price: 249,
       productImage: '../assets/imgs/news/news3.jpg',
-      id: 3,
+      id: 4,
     },
     {
       productTitle: 'pierścień',
       type: 'złoty',
       price: 319,
       productImage: '../assets/imgs/news/news4.jpg',
-      id: 4,
+      id: 3,
     },
   ];
 }

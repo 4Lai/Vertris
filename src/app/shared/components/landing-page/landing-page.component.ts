@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
-import { LandingPageService } from '../../services/landing-page.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -34,7 +33,7 @@ export class LandingPageComponent implements AfterViewInit {
     }
   }
 
-  constructor(private landingPageService: LandingPageService) {}
+  constructor() {}
 
   ngAfterViewInit(): void {
     this.screenWidth = window.innerWidth;

@@ -1,0 +1,34 @@
+<ul class="product-list">
+  <app-single-product-list
+    *ngFor="let product of newProdsArr"
+    [productTitle]="product.productTitle"
+    [type]="product.type"
+    [price]="product.price"
+    [productImage]="product.productImage"
+    [id]="product.id"
+    [discountValue]="product.discountValue"
+    [discount]="product.discount"
+    [bestseller]="product.bestseller"
+  ></app-single-product-list>
+</ul>
+<div class="pagination">
+  <span
+    *ngIf="currentPage != 1"
+    class="material-symbols-outlined icon"
+    (click)="previousPage(currentPage)"
+  >
+    chevron_left
+  </span>
+  <a class="pagination-li clicked">
+    {{ currentPage }}
+  </a>
+  <span
+    *ngIf="currentPage != maxPages"
+    class="material-symbols-outlined icon"
+    (click)="nextPage(currentPage)"
+  >
+    chevron_right
+  </span>
+  <a class="holder">...</a>
+  <a class="pagination-li" (click)="lastPage(maxPages)">{{ maxPages }}</a>
+</div>

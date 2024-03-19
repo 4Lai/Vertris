@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<section class="watches">
+  <div class="watches-header">
+    <h1>{{ title | uppercase }}</h1>
+    <p>{{ watchesArr.length }} wyników</p>
+  </div>
+  <div>
+    <app-product-list [prodArr]="watchesArr"></app-product-list>
+  </div>
+</section>
+<app-footer></app-footer>
+<app-made-by></app-made-by>

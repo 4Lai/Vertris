@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<section class="necklaces">
+  <div class="necklaces-header">
+    <h1>{{ title | uppercase }}</h1>
+    <p>{{ neckArr.length }} wyników</p>
+  </div>
+  <div>
+    <app-product-list [prodArr]="neckArr"></app-product-list>
+  </div>
+</section>
+<app-footer></app-footer>
+<app-made-by></app-made-by>

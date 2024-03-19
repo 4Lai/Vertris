@@ -1,11 +1,13 @@
 <nav
   class="nav-bar"
   [ngClass]="{
-    changeBg: windowHeight >= 1 && openWindow === false,
+    changeBg:
+      (windowHeight >= 1 && openWindow === false && curRoute === '/') ||
+      curRoute != '/',
     changeBg2: openWindow === true
   }"
 >
-  <div class="nav-bar-container">
+  <div class="nav-bar-container" routerLink="/">
     <img
       class="nav-bar-container_image"
       src="../../../../assets/imgs/logo/logo.png"
@@ -13,7 +15,11 @@
     />
     <p
       class="nav-bar-container_title"
-      [ngClass]="{ changeCol: windowHeight >= 1 && openWindow === false }"
+      [ngClass]="{
+        changeCol:
+          (windowHeight >= 1 && openWindow === false && curRoute === '/') ||
+          (curRoute != '/' && openWindow === false)
+      }"
     >
       Vertris
     </p>
@@ -23,7 +29,11 @@
     <span
       (click)="onClick()"
       class="material-symbols-outlined icon"
-      [ngClass]="{ changeCol: windowHeight >= 1 && openWindow === false }"
+      [ngClass]="{
+        changeCol:
+          (windowHeight >= 1 && openWindow === false && curRoute === '/') ||
+          (curRoute != '/' && openWindow === false)
+      }"
     >
       {{ !openWindow ? "menu" : "close" }}
     </span>

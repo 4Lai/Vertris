@@ -12,7 +12,7 @@ export class NavBarService {
     { link: '/nowości', text: 'nowości' },
     { link: '/naszyjniki', text: 'naszyjniki' },
     { link: '/kolczyki', text: 'kolczyki' },
-    { link: '/pierścienie', text: 'pierścienie' },
+    { link: '/pierścionki', text: 'pierścionki' },
     { link: '/zegarki', text: 'zegarki' },
     { link: '/karty-podarunkowe', text: 'karty podarunkowe' },
     { link: '/akcesoria', text: 'akcesoria' },
