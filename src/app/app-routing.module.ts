@@ -10,6 +10,7 @@ import { EaringsComponent } from './pages/earings/earings.component';
 import { NecklacesComponent } from './pages/necklaces/necklaces.component';
 import { WatchesComponent } from './pages/watches/watches.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
+import { SingleProductDetailsComponent } from './pages/single-product-details/single-product-details.component';
 
 const routes: Routes = [
   {
@@ -20,10 +21,15 @@ const routes: Routes = [
   },
   { path: 'produkty', component: ProductsComponent },
   { path: 'pierścionki', component: RingsComponent },
+  { path: 'pierścionki/:id', component: SingleProductDetailsComponent },
   { path: 'kolczyki', component: EaringsComponent },
+  { path: 'kolczyki/:id', component: SingleProductDetailsComponent },
   { path: 'naszyjniki', component: NecklacesComponent },
+  { path: 'naszyjniki/:id', component: SingleProductDetailsComponent },
   { path: 'zegarki', component: WatchesComponent },
+  { path: 'zegarki/:id', component: SingleProductDetailsComponent },
   { path: 'akcesoria', component: AccessoriesComponent },
+  { path: 'akcesoria/:id', component: SingleProductDetailsComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

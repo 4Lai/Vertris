@@ -17,6 +17,7 @@ export class DealsService {
       discount: true,
       discountValue: 40,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'pierścień zaręczynowy',
@@ -27,6 +28,7 @@ export class DealsService {
       discount: true,
       discountValue: 25,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'naszyjnik',
@@ -37,6 +39,7 @@ export class DealsService {
       discount: true,
       discountValue: 50,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'kolczyki',
@@ -47,6 +50,7 @@ export class DealsService {
       discount: true,
       discountValue: 15,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'pierścień',
@@ -57,6 +61,7 @@ export class DealsService {
       discount: true,
       discountValue: 44,
       bestseller: false,
+      path: 'pierścionki',
     },
   ];
 }

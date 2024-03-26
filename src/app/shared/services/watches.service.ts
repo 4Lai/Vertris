@@ -17,6 +17,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -27,6 +28,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -37,6 +39,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -47,6 +50,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -57,6 +61,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -67,6 +72,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -77,6 +83,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -87,6 +94,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -97,6 +105,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -107,6 +116,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -117,6 +127,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -127,6 +138,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -137,6 +149,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
     {
       productTitle: 'zegarek',
@@ -147,6 +160,7 @@ export class WatchesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'zegarki',
     },
   ];
 }

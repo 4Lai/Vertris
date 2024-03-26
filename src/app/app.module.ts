@@ -38,6 +38,8 @@ import { EaringsComponent } from './pages/earings/earings.component';
 import { NecklacesComponent } from './pages/necklaces/necklaces.component';
 import { WatchesComponent } from './pages/watches/watches.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
+import { ProductDetailsComponent } from './shared/components/product-details/product-details.component';
+import { SingleProductDetailsComponent } from './pages/single-product-details/single-product-details.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +78,8 @@ import { AccessoriesComponent } from './pages/accessories/accessories.component'
     NecklacesComponent,
     WatchesComponent,
     AccessoriesComponent,
+    ProductDetailsComponent,
+    SingleProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,5 +3,6 @@ export interface News {
   type: string;
   price: number;
   productImage: string;
-  id: number
+  id: number;
+  path: string;
 }

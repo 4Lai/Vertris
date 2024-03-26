@@ -14,6 +14,7 @@ export class SingleProductComponent implements OnInit {
   @Input() discountValue: number = 0;
   @Input() discount: boolean = false;
   @Input() bestseller?: boolean = false;
+  @Input() path: string = '';
   newPrice: any;
 
   ngOnInit(): void {

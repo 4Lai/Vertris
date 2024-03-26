@@ -17,6 +17,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki 2.0 cm',
@@ -27,6 +28,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: true,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -37,6 +39,7 @@ export class EaringsService {
       discountValue: 40,
       discount: true,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -47,6 +50,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -57,6 +61,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -67,6 +72,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -77,6 +83,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -87,6 +94,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -97,6 +105,7 @@ export class EaringsService {
       discountValue: 15,
       discount: true,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -107,6 +116,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'okrągłe kolczyki',
@@ -117,6 +127,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -127,6 +138,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: true,
+      path: 'kolczyki',
     },
     {
       productTitle: 'kolczyki',
@@ -137,6 +149,7 @@ export class EaringsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'kolczyki',
     },
   ];
 }

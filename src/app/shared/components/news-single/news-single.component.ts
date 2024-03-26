@@ -11,5 +11,6 @@ export class NewsSingleComponent {
   @Input() price: number = 0;
   @Input() img: string = '';
   @Input() id: number = 0;
+  @Input() path: string = ''
   @Input() reversed: number = 0;
 }

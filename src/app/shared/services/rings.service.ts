@@ -17,6 +17,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -27,6 +28,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: true,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -37,6 +39,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -47,6 +50,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -57,6 +61,7 @@ export class RingsService {
       discountValue: 44,
       discount: true,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -67,6 +72,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień zaręczynowy',
@@ -77,6 +83,7 @@ export class RingsService {
       discountValue: 25,
       discount: true,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -87,6 +94,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -97,6 +105,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -107,6 +116,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -117,6 +127,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -127,6 +138,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -137,6 +149,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
     {
       productTitle: 'pierścień',
@@ -147,6 +160,7 @@ export class RingsService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'pierścionki',
     },
   ];
 }

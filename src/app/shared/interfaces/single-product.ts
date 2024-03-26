@@ -7,4 +7,5 @@ export interface SingleProduct {
   discountValue: number;
   discount: boolean
   bestseller: boolean;
+  path: string;
 }

@@ -17,6 +17,7 @@ export class RecommendedForYouService {
       discount: false,
       discountValue: 0,
       bestseller: true,
+      path: 'kolczyki',
     },
     {
       productTitle: 'pierścień',
@@ -27,6 +28,7 @@ export class RecommendedForYouService {
       discount: false,
       discountValue: 0,
       bestseller: true,
+      path: 'pierścionki',
     },
     {
       productTitle: 'naszyjnik',
@@ -37,6 +39,7 @@ export class RecommendedForYouService {
       discount: false,
       discountValue: 0,
       bestseller: true,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -47,6 +50,7 @@ export class RecommendedForYouService {
       discount: false,
       discountValue: 0,
       bestseller: true,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'kolczyki',
@@ -57,6 +61,7 @@ export class RecommendedForYouService {
       discount: false,
       discountValue: 0,
       bestseller: true,
+      path: 'kolczyki',
     },
   ];
 }

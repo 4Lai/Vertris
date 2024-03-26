@@ -16,6 +16,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -26,6 +27,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -36,6 +38,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -46,6 +49,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -56,6 +60,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -66,6 +71,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -76,6 +82,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -86,6 +93,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -96,6 +104,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -106,6 +115,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -116,6 +126,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -126,6 +137,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
     {
       productTitle: 'portfel',
@@ -136,6 +148,7 @@ export class AccessoriesService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'akcesoria',
     },
   ];
 }

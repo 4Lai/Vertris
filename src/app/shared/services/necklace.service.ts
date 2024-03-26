@@ -17,6 +17,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -27,6 +28,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -37,6 +39,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: true,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -47,6 +50,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -57,6 +61,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: true,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -67,6 +72,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -77,6 +83,7 @@ export class NecklaceService {
       discountValue: 50,
       discount: true,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -87,6 +94,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -97,6 +105,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -107,6 +116,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -117,6 +127,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
     {
       productTitle: 'naszyjnik',
@@ -127,6 +138,7 @@ export class NecklaceService {
       discountValue: 0,
       discount: false,
       bestseller: false,
+      path: 'naszyjniki',
     },
   ];
 }
