@@ -1,0 +1,83 @@
+  <div class="bg"></div>
+  <div class="filter-products">
+    <div class="filter-products_header">
+    <span (click)="onClose()" class="material-symbols-outlined icon">
+      close
+    </span>
+    <h1 class="filter-products-title">{{ "filtry" | uppercase }}</h1>
+    <hr />
+    
+    <form class="form" [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+      <div class="form_price">
+        <label class="form_price-label" for="">{{ "cena" | uppercase }}</label>
+        <div class="form_price_inputs">
+          <input
+            class="form_price_inputs-i"
+            placeholder="od"
+            type="number"
+            formControlName="priceFrom"
+            name=""
+            min="0"
+            id=""
+            />
+            <span class="material-symbols-outlined remove"> remove </span>
+            <input
+            class="form_price_inputs-i"
+            placeholder="do"
+            type="number"
+            formControlName="priceTo"
+            min="0"
+            name=""
+            id=""
+            />
+          </div>
+        </div>
+        
+        <div class="form_type">
+          <label class="form_type-label" for="">{{
+            "Typ/Marka" | uppercase
+          }}</label>
+        <select class="form_type_select" formControlName="type" name="" id="">
+          <option class="form_type_select-option" selected value="">
+            {{ "wybierz" | uppercase }}
+          </option>
+          <option
+          *ngFor="let type of allProds"
+          class="form_type_select-option"
+          value="{{ type }}"
+          >
+          {{ type | uppercase }}
+        </option>
+      </select>
+    </div>
+    
+    <div class="form_sale">
+      <input
+      class="form_sale-input"
+      formControlName="sale"
+      type="checkbox"
+      name=""
+      id=""
+      />
+      <label class="form_sale-label" for="">{{
+        "przecena" | uppercase
+      }}</label>
+      </div>
+      
+      <div class="form_bestseller">
+        <input
+        class="form_bestseller-input"
+        formControlName="bestseller"
+        type="checkbox"
+        name=""
+        id=""
+        />
+        <label class="form_bestseller-label" for="">{{
+          "bestseller" | uppercase
+        }}</label>
+      </div>
+      
+      <button class="form_btn" type="submit">{{ "szukaj" | uppercase }}</button>
+    </form>
+  </div>
+</div>

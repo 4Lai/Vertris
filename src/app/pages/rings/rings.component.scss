@@ -2,19 +2,23 @@
   padding-top: 184.5px;
   width: calc(90% - 3.2rem);
   margin: auto auto;
-  &-header {
-    margin-bottom: 2rem;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.33s all;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.33s all;
+}
+
+@media (max-width: 1200px) {
+  .rings {
+    padding-top: 124.5px;
+    width: calc(100% - 3.2rem);
   }
-}
-
-h1 {
-  font-size: 4.2rem;
-  color: #000;
-  font-weight: 200;
-}
-
-p {
-  font-size: 2.4rem;
-  color: #000;
-  font-weight: 200;
 }

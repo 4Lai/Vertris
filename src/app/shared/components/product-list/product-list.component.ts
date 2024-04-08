@@ -1,4 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { SingleProduct } from '../../interfaces/single-product';
 
 @Component({
@@ -6,13 +12,24 @@ import { SingleProduct } from '../../interfaces/single-product';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.scss'],
 })
-export class ProductListComponent implements OnInit {
+export class ProductListComponent implements OnInit, OnChanges {
   @Input() prodArr: SingleProduct[] = [];
   currentPage: number = 1;
   elPerPage: number = 9;
   elDisplayed: number = 0;
   maxPages: number = 0;
   newProdsArr: SingleProduct[] = [];
+
+  ngOnChanges(changes: SimpleChanges): void {
+    changes['prodArr'];
+    this.maxPages = Math.ceil(this.prodArr.length / this.elPerPage);
+    this.newProdsArr = this.prodArr;
+    this.elDisplayed = this.elPerPage;
+    this.currentPage = 1;
+    if (this.currentPage === 1) {
+      this.newProdsArr = this.newProdsArr.slice(0, this.elPerPage);
+    }
+  }
 
   ngOnInit(): void {
     this.maxPages = Math.ceil(this.prodArr.length / this.elPerPage);

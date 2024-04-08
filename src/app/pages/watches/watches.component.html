@@ -1,12 +1,18 @@
 <app-nav-bar></app-nav-bar>
 <section class="watches">
-  <div class="watches-header">
-    <h1>{{ title | uppercase }}</h1>
-    <p>{{ watchesArr.length }} wyników</p>
-  </div>
+  <app-dynamic-products-header
+    [dynTitle]="title"
+    [numberOfProds]="watchesArr.length"
+    (popUpOpened)="openPop($event)"
+  ></app-dynamic-products-header>
   <div>
     <app-product-list [prodArr]="watchesArr"></app-product-list>
   </div>
 </section>
 <app-footer></app-footer>
 <app-made-by></app-made-by>
+<app-filter-products
+  [ngClass]="isOpenedFilter === true ? 'visible' : 'hidden'"
+  (closeVal)="openPop($event)"
+  (form)="filterArr($event)"
+></app-filter-products>

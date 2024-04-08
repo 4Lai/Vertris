@@ -1,0 +1,12 @@
+<div class="dynamic-products-header">
+  <h1 class="dynamic-products-header_title">{{ dynTitle | uppercase }}</h1>
+  <div class="dynamic-products-header_sub-cont">
+    <button (click)="openPopUp()" class="dynamic-products-header_sub-cont_btn">
+      {{ "filtruj" | uppercase }}
+      <span class="material-symbols-outlined icon"> filter_list </span>
+    </button>
+    <p class="dynamic-products-header_sub-cont_text">
+      {{ numberOfProds }} wyników
+    </p>
+  </div>
+</div>

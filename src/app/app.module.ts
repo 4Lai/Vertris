@@ -40,6 +40,8 @@ import { WatchesComponent } from './pages/watches/watches.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
 import { ProductDetailsComponent } from './shared/components/product-details/product-details.component';
 import { SingleProductDetailsComponent } from './pages/single-product-details/single-product-details.component';
+import { FilterProductsComponent } from './shared/components/filter-products/filter-products.component';
+import { DynamicProductsHeaderComponent } from './shared/components/dynamic-products-header/dynamic-products-header.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +82,8 @@ import { SingleProductDetailsComponent } from './pages/single-product-details/si
     AccessoriesComponent,
     ProductDetailsComponent,
     SingleProductDetailsComponent,
+    FilterProductsComponent,
+    DynamicProductsHeaderComponent,
   ],
   imports: [
     BrowserModule,

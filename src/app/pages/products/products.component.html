@@ -1,12 +1,19 @@
 <app-nav-bar></app-nav-bar>
 <section class="products">
-  <div class="products-header">
-    <h1>{{ title | uppercase }}</h1>
-    <p>{{ this.shuffled.length }} wyników</p>
-  </div>
+    <app-dynamic-products-header
+    [dynTitle]="title"
+    [numberOfProds]="shuffled.length"
+    (popUpOpened)="openPop($event)"
+  ></app-dynamic-products-header>
   <div>
     <app-product-list [prodArr]="shuffled"></app-product-list>
   </div>
 </section>
 <app-footer></app-footer>
 <app-made-by></app-made-by>
+<app-filter-products
+  (closeVal)="openPop($event)"
+  class="hidden"
+  [ngClass]="isOpenedFilter === true ? 'visible' : 'hidden'"
+  (form)="filterArr($event)"
+></app-filter-products>
