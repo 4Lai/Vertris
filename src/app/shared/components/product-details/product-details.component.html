@@ -1,1 +1,83 @@
-<p>product-details works!</p>
+<section class="product-details">
+  <div class="product-details-images">
+    <div class="product-details-images-multi">
+      <img
+        class="product-details-images-multi-img"
+        (click)="changeImage(singleProd[0].productImage)"
+        src="{{ singleProd[0].productImage }}"
+        alt=""
+      />
+      <img
+        class="product-details-images-multi-img"
+        (click)="changeImage(singleProd[0].productImage)"
+        src="{{ singleProd[0].productImage }}"
+        alt=""
+      />
+      <img
+        class="product-details-images-multi-img"
+        (click)="changeImage(singleProd[0].productImage)"
+        src="{{ singleProd[0].productImage }}"
+        alt=""
+      />
+      <img
+        class="product-details-images-multi-img"
+        (click)="changeImage(allProds[0].productImage)"
+        src="{{ allProds[0].productImage }}"
+        alt=""
+      />
+    </div>
+    <div
+      class="product-details-images-single"
+    >
+      <img
+        [@simpleFadeAnimation]="currentImage()"
+        class="product-details-images-single-img"
+        src="{{ currentImage() }}"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <div class="product-details-info">
+    <h1 class="product-details-info-title">
+      {{ singleProd[0].productTitle | uppercase }}
+    </h1>
+    <p class="product-details-info-subtitle">
+      {{ "cena:" | uppercase }}
+      {{ singleProd[0].price | number : "1.2-2" }} zł
+    </p>
+    <div class="line"></div>
+    <p class="product-details-info-subtitle type">
+      {{ singleProd[0].type | uppercase }}
+    </p>
+    <p class="product-details-info-subtitle desc">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum commodi
+      neque magni? Praesentium consequatur libero quisquam laudantium laborum ab
+      aut doloremque magnam odio accusantium soluta architecto nisi vel
+      consectetur, saepe officiis aspernatur quia explicabo suscipit modi
+      adipisci numquam nobis. Accusantium soluta recusandae dolorum vel
+      similique minima totam ab deleniti officia.
+    </p>
+
+    <div class="icons">
+      <div class="icons-c">
+        <span class="material-symbols-outlined icon">
+          featured_seasonal_and_gifts
+        </span>
+        <p class="i-text">{{ "ozdobne opakowanie" | capFirst }}</p>
+      </div>
+      <div class="icons-c">
+        <span class="material-symbols-outlined icon"> credit_card </span>
+        <p class="i-text">{{ "bezpieczna płatność" | capFirst }}</p>
+      </div>
+      <div class="icons-c">
+        <span class="material-symbols-outlined icon"> cycle </span>
+        <p class="i-text">{{ "darmowy zwrot" | capFirst }}</p>
+      </div>
+    </div>
+
+    <button class="product-details-info-button">
+      {{ "zamów" | uppercase }}
+    </button>
+  </div>
+</section>

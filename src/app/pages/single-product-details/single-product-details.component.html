@@ -1,1 +1,10 @@
 <app-nav-bar></app-nav-bar>
+<section class="product">
+  <app-product-details></app-product-details>
+</section>
+<app-products-carousel
+  [sectionTitle]="'wybrane dla ciebie'"
+  [arrProd]="newRecProds"
+  [indexOfClass]="0"
+></app-products-carousel>
+<app-footer></app-footer>

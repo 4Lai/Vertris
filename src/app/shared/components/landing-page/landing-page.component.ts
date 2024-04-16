@@ -1,11 +1,16 @@
-import { AfterViewInit, Component, HostListener } from '@angular/core';
+import {
+  AfterViewChecked,
+  AfterViewInit,
+  Component,
+  HostListener,
+} from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
 })
-export class LandingPageComponent implements AfterViewInit {
+export class LandingPageComponent implements AfterViewInit, AfterViewChecked {
   screenWidth: any;
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -34,6 +39,18 @@ export class LandingPageComponent implements AfterViewInit {
   }
 
   constructor() {}
+
+  ngAfterViewChecked(): void {
+    this.screenWidth = window.innerWidth;
+    let rings = document.querySelector('.rings') as HTMLElement;
+    let earings = document.querySelector('.earings') as HTMLElement;
+    if (this.screenWidth >= 1230) {
+      rings.addEventListener('mouseover', this.onHover);
+      rings.addEventListener('mouseleave', this.onLeave);
+      earings.addEventListener('mouseover', this.onHover2);
+      earings.addEventListener('mouseleave', this.onLeave);
+    }
+  }
 
   ngAfterViewInit(): void {
     this.screenWidth = window.innerWidth;
