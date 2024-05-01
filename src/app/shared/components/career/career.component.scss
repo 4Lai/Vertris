@@ -1,0 +1,228 @@
+.career {
+  margin-bottom: 10rem;
+  &-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    &_img {
+      width: 100%;
+    }
+    &_text {
+      font-size: 2rem;
+      color: #000;
+      font-weight: 200;
+      margin-bottom: 2rem;
+      text-align: justify;
+      word-break: break-all;
+    }
+  }
+}
+
+.join-us {
+  background-color: #f9f9f9;
+  padding: 6rem 3rem 6rem 3rem;
+  display: grid;
+  justify-content: center;
+}
+
+hr {
+  margin: auto auto;
+  width: 5%;
+  text-align: center;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+button {
+  margin: auto auto;
+  width: fit-content;
+  border: 1px solid #000;
+  font-size: 2.4rem;
+  color: #000;
+  background-color: transparent;
+  font-weight: 200;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.5s all;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media (max-width: 375px) {
+  .career {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      grid-template-columns: 100%;
+      &_img {
+      }
+      &_text {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 3rem 1.6rem 3rem 1.6rem;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    &:hover {
+    }
+  }
+}
+
+@media (min-width: 376px) and (max-width: 500px) {
+  .career {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      grid-template-columns: 100%;
+      &_img {
+        object-fit: cover;
+        height: 350px;
+      }
+      &_text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 3rem 1.6rem 3rem 1.6rem;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  button {
+    font-size: 2.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    &:hover {
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .career {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      grid-template-columns: 100%;
+      &_img {
+        object-fit: cover;
+        height: 350px;
+      }
+      &_text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 3rem 1.6rem 3rem 1.6rem;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  button {
+    font-size: 2.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    &:hover {
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 960px) {
+  .career {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      margin: auto auto;
+      max-width: calc(800px - 32px);
+      grid-template-columns: 100%;
+      &_img {
+        object-fit: cover;
+        height: 350px;
+      }
+      &_text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 3rem 1.6rem 3rem 1.6rem;
+  }
+
+  hr {
+    width: 10%;
+  }
+
+  button {
+    font-size: 2.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    &:hover {
+    }
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1500px) {
+  .career {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      margin: auto auto;
+      max-width: calc(900px - 32px);
+      grid-template-columns: 100%;
+      &_img {
+        object-fit: cover;
+        height: 350px;
+      }
+      &_text {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 3rem;
+    width: 98%;
+    margin: auto auto;
+  }
+
+  hr {
+    width: 5%;
+  }
+
+  button {
+    font-size: 2.2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    &:hover {
+    }
+  }
+}

@@ -1,3 +1,11 @@
+.bg {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: url("../../../../assets/imgs/news/bggg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .news {
   margin: auto auto;
   width: calc(90% - 3.2rem);
@@ -7,7 +15,7 @@
       width: fit-content;
       color: #000;
       font-size: 3.6rem;
-      font-weight: 200;
+      font-weight: 300;
     }
   }
   &-main {
@@ -19,14 +27,15 @@
   &-footer {
     &_link {
       text-decoration: none;
-      margin-bottom: 5rem;
+      padding: 2rem 0rem 2rem 0rem;
+      margin: auto auto;
       width: fit-content;
       display: flex;
       column-gap: 2rem;
       align-items: center;
       justify-content: center;
-      float: right;
       transition: 1s all;
+      text-align: center;
       &:hover {
         .news-footer_link_title {
           color: red;

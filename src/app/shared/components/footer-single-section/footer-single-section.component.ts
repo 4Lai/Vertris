@@ -1,5 +1,6 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { FooterSingle } from '../../interfaces/footer-single';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer-single-section',
@@ -22,6 +23,8 @@ export class FooterSingleSectionComponent implements OnInit {
     }
   }
 
+  constructor(private router:Router) {}
+
   ngOnInit(): void {
     this.windowWidth = window.innerWidth;
     if (this.windowWidth <= 900) {
@@ -34,5 +37,9 @@ export class FooterSingleSectionComponent implements OnInit {
 
   expand() {
     this.ex = !this.ex;
+  }
+
+  click(path: string, path2: string) {
+    this.router.navigate([`${path}`], {fragment: `${path2}`})
   }
 }

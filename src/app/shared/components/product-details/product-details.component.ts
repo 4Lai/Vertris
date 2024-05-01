@@ -8,7 +8,13 @@ import {
 import { SingleProduct } from '../../interfaces/single-product';
 import { AllProductsService } from '../../services/all-products.service';
 import { ActivatedRoute } from '@angular/router';
-import { animate, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-product-details',
@@ -16,7 +22,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
   styleUrls: ['./product-details.component.scss'],
   animations: [
     trigger('simpleFadeAnimation', [
-      transition('*=>*', [style({ opacity: 0 }), animate(600)]),
+      transition('* => *', [style({ opacity: 0 }), animate('0.6s')]),
     ]),
   ],
 })

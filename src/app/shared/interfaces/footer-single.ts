@@ -3,5 +3,6 @@ export interface FooterSingle {
   data: {
     subtitle: string;
     link: string;
+    frag: string;
   }[];
 }

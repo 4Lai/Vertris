@@ -43,6 +43,10 @@ import { ProductDetailsComponent } from './shared/components/product-details/pro
 import { SingleProductDetailsComponent } from './pages/single-product-details/single-product-details.component';
 import { FilterProductsComponent } from './shared/components/filter-products/filter-products.component';
 import { DynamicProductsHeaderComponent } from './shared/components/dynamic-products-header/dynamic-products-header.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { AboutCompanyComponent } from './shared/components/about-company/about-company.component';
+import { SpotComponent } from './shared/components/spot/spot.component';
+import { CareerComponent } from './shared/components/career/career.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +89,10 @@ import { DynamicProductsHeaderComponent } from './shared/components/dynamic-prod
     SingleProductDetailsComponent,
     FilterProductsComponent,
     DynamicProductsHeaderComponent,
+    AboutUsComponent,
+    AboutCompanyComponent,
+    SpotComponent,
+    CareerComponent,
   ],
   imports: [
     BrowserModule,

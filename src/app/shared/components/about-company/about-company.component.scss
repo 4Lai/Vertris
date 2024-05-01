@@ -1,0 +1,166 @@
+.about-company {
+  margin-bottom: 10rem;
+  &-title {
+    font-size: 4rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    &_text {
+      font-size: 2rem;
+      color: #000;
+      font-weight: 200;
+      // margin-bottom: 2rem;
+      background-color: #f9f9f9;
+      padding: 6rem 3rem 6rem 3rem;
+      text-align: justify;
+      word-break: break-all;
+    }
+    &_img {
+      width: 100%;
+    }
+  }
+}
+
+hr {
+  margin: auto auto;
+  width: 5%;
+  text-align: center;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+@media (max-width: 375px) {
+  .about-company {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      grid-template-columns: 100%;
+      &_text {
+        font-size: 1.6rem;
+        padding: 3rem 1.6rem 3rem 1.6rem;
+      }
+      &_img {
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+    }
+  }
+
+  hr {
+    width: 10%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 500px) {
+  .about-company {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      grid-template-columns: 100%;
+      &_text {
+        font-size: 1.8rem;
+        padding: 3rem 1.6rem 3rem 1.6rem;
+      }
+      &_img {
+        object-fit: cover;
+        height: 350px;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+    }
+  }
+
+  hr {
+    width: 10%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .about-company {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      grid-template-columns: 100%;
+      &_text {
+        font-size: 1.8rem;
+        padding: 3rem 1.6rem 3rem 1.6rem;
+      }
+      &_img {
+        object-fit: cover;
+        height: 350px;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+    }
+  }
+
+  hr {
+    width: 10%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 960px) {
+  .about-company {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      margin: auto auto;
+      max-width: calc(800px - 32px);
+      grid-template-columns: 100%;
+      &_text {
+        font-size: 1.8rem;
+        padding: 3rem 1.6rem 3rem 1.6rem;
+      }
+      &_img {
+        object-fit: cover;
+        height: 350px;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+    }
+  }
+
+  hr {
+    width: 10%;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1500px) {
+  .about-company {
+    &-title {
+      font-size: 4rem;
+    }
+    &-container {
+      margin: auto auto;
+      max-width: calc(900px - 32px);
+      grid-template-columns: 100%;
+      &_text {
+        width: 98%;
+        margin: auto auto;
+        font-size: 2rem;
+        padding: 3rem;
+      }
+      &_img {
+        object-fit: cover;
+        height: 350px;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+    }
+  }
+
+  hr {
+    width: 5%;
+  }
+}

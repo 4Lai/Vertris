@@ -16,6 +16,8 @@
     &-single {
       &-img {
         width: calc(100% + 0.9rem);
+        border-top-right-radius: 25%;
+        // border-bottom-right-radius: 25%;
       }
     }
     &-multi {
@@ -25,6 +27,12 @@
       &-img {
         cursor: pointer;
         width: 100%;
+        &:first-child {
+          // border-top-left-radius: 50%;
+        }
+        &:last-child {
+          border-bottom-left-radius: 50%;
+        }
       }
     }
   }
@@ -100,9 +108,9 @@ hr {
 .icon {
   padding: 1rem;
   background-color: transparent;
-  border: 1px solid #000;
   border-radius: 50%;
   color: #000;
+  background-color: gold;
   margin-bottom: 1rem;
 }
 

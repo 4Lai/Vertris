@@ -5,26 +5,54 @@
     navv: (windowHeight >= 1 && curRoute === '/') || curRoute != '/'
   }"
 >
-  <div
-    routerLink="/"
-    class="nav-bar-container"
-    [ngClass]="{
-      navCont: (windowHeight >= 1 && curRoute === '/') || curRoute != '/'
-    }"
-  >
-    <img
-      class="nav-bar-container_image"
-      src="../../../../assets/imgs/logo/logo.png"
-      alt="Logo"
-    />
-    <p
-      class="nav-bar-container_title"
+  <div class="flex">
+    <div
+      routerLink="/"
+      class="nav-bar-container"
       [ngClass]="{
-        links: (windowHeight >= 1 && curRoute === '/') || curRoute != '/'
+        navCont: (windowHeight >= 1 && curRoute === '/') || curRoute != '/'
       }"
     >
-      Vertris
-    </p>
+      <img
+        class="nav-bar-container_image"
+        src="../../../../assets/imgs/logo/logo.png"
+        alt="Logo"
+      />
+      <p
+        class="nav-bar-container_title"
+        [ngClass]="{
+          links: (windowHeight >= 1 && curRoute === '/') || curRoute != '/'
+        }"
+      >
+        Vertris
+      </p>
+    </div>
+    <a routerLink="" class="absolute margin-r">
+      <span
+        class="material-symbols-outlined icon"
+        [ngClass]="{ hidden: windowHeight < 1 && curRoute === '/' }"
+      >
+        pin_drop
+      </span>
+      <span
+        class="icon-text"
+        [ngClass]="{ hidden: windowHeight < 1 && curRoute === '/' }"
+        >{{ "znajdź salon" | capFirst }}</span
+      >
+    </a>
+    <div class="absolute">
+      <span
+        class="material-symbols-outlined icon"
+        [ngClass]="{ hidden: windowHeight < 1 && curRoute === '/' }"
+      >
+        call
+      </span>
+      <span
+        class="icon-text"
+        [ngClass]="{ hidden: windowHeight < 1 && curRoute === '/' }"
+        >+48 999 999 999</span
+      >
+    </div>
   </div>
   <ul
     [ngClass]="{

@@ -11,6 +11,7 @@ import { NecklacesComponent } from './pages/necklaces/necklaces.component';
 import { WatchesComponent } from './pages/watches/watches.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
 import { SingleProductDetailsComponent } from './pages/single-product-details/single-product-details.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 const routes: Routes = [
   {
@@ -30,12 +31,18 @@ const routes: Routes = [
   { path: 'zegarki/:id', component: SingleProductDetailsComponent },
   { path: 'akcesoria', component: AccessoriesComponent },
   { path: 'akcesoria/:id', component: SingleProductDetailsComponent },
+  { path: 'o-nas', component: AboutUsComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      onSameUrlNavigation: 'reload',
+      scrollOffset: [0, 170],
+    }),
   ],
   exports: [RouterModule],
 })

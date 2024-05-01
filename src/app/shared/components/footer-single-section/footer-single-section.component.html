@@ -18,6 +18,7 @@
       *ngFor="let link of array[0].data"
       class="footer-single-section_link-container_link"
       routerLink="{{ link.link }}"
+      (click)="click(link.link, link.frag)"
       >{{ link.subtitle | capFirst }}</a
     >
   </div>
