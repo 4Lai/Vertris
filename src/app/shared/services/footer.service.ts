@@ -39,14 +39,14 @@ export class FooterService {
       title: 'obsługa klienta',
       data: [
         {
-          subtitle: 'formy dostawy i płatności',
+          subtitle: 'dostawa i zwroty',
           link: '/obsługa-klienta',
-          frag: 'formy-dostawy-platnosci',
+          frag: 'dostawa-zwroty',
         },
         {
-          subtitle: 'zwroty i reklamacje',
+          subtitle: 'formy płatności',
           link: '/obsługa-klienta',
-          frag: 'zwroty',
+          frag: 'platnosci',
         },
         { subtitle: 'FAQ', link: '/obsługa-klienta', frag: 'faq' },
       ],

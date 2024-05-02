@@ -1,0 +1,20 @@
+<section class="faq" id="faq">
+  <h1 class="faq-title">{{ faqArr[0].title | capFirst }}</h1>
+  <div class="faq-list">
+    <div
+      class="faq-list-item"
+      (click)="toggle(i)"
+      *ngFor="let question of faqArr[0].data; let i = index"
+    >
+      <div class="flex">
+        <h3 class="faq-list-item_q">
+          {{ i + 1 }}. {{ question.question | capFirst }}
+        </h3>
+        <span class="material-symbols-outlined iconn"> expand_more </span>
+      </div>
+      <p class="faq-list-item_a hidden">
+        {{ question.answer | capFirst }}
+      </p>
+    </div>
+  </div>
+</section>

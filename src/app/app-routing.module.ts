@@ -12,6 +12,7 @@ import { WatchesComponent } from './pages/watches/watches.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
 import { SingleProductDetailsComponent } from './pages/single-product-details/single-product-details.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { CustomerServiceComponent } from './pages/customer-service/customer-service.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'akcesoria', component: AccessoriesComponent },
   { path: 'akcesoria/:id', component: SingleProductDetailsComponent },
   { path: 'o-nas', component: AboutUsComponent },
+  { path: 'obsługa-klienta', component: CustomerServiceComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

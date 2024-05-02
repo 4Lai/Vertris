@@ -47,6 +47,10 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AboutCompanyComponent } from './shared/components/about-company/about-company.component';
 import { SpotComponent } from './shared/components/spot/spot.component';
 import { CareerComponent } from './shared/components/career/career.component';
+import { CustomerServiceComponent } from './pages/customer-service/customer-service.component';
+import { FaqComponent } from './shared/components/faq/faq.component';
+import { DeliveryReturnsComponent } from './shared/components/delivery-returns/delivery-returns.component';
+import { PaymentMethodsComponent } from './shared/components/payment-methods/payment-methods.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +97,10 @@ import { CareerComponent } from './shared/components/career/career.component';
     AboutCompanyComponent,
     SpotComponent,
     CareerComponent,
+    CustomerServiceComponent,
+    FaqComponent,
+    DeliveryReturnsComponent,
+    PaymentMethodsComponent,
   ],
   imports: [
     BrowserModule,

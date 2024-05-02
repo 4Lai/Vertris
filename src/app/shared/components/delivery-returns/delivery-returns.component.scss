@@ -1,0 +1,56 @@
+.delivery-returns {
+  margin-bottom: 5rem;
+  &-title {
+    color: #000;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  &-container {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: calc(100% - 3.33% - 3.33%);
+    justify-content: space-evenly;
+    &_subtitle {
+      color: #000;
+      font-size: 3rem;
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+    &_list {
+      &-item {
+        margin-left: 4rem;
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.additional {
+  display: grid;
+  grid-template-columns: calc(100% - 3.33% - 3.33%);
+  justify-content: space-evenly;
+  &_info {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+  }
+  &_btn {
+    width: fit-content;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    transition: 0.5s all;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 200;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<section class="payment-methods" id="platnosci">
+  <h1 class="payment-methods-title">{{ pmD[0].title | capFirst }}</h1>
+  <ul class="payment-methods-container">
+    <li *ngFor="let item of pmD[0].data" class="payment-methods-container-item">
+      <h3 class="payment-methods-container-item_subtitle">{{ item.subtitle }}</h3>
+      <p class="payment-methods-container-item_desc">{{ item.description }}</p>
+    </li>
+  </ul>
+</section>

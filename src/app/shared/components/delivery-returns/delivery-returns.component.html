@@ -1,0 +1,23 @@
+<section class="delivery-returns" id="dostawa-zwroty">
+  <h1 class="delivery-returns-title">{{ "dostawa i zwroty" | capFirst }}</h1>
+  <div
+    class="delivery-returns-container"
+    *ngFor="let el of deliveryReturnsData; let i = index"
+  >
+    <h3 class="delivery-returns-container_subtitle">
+      {{ el.title | capFirst }}
+    </h3>
+    <ul class="delivery-returns-container_list">
+      <li
+        class="delivery-returns-container_list-item"
+        *ngFor="let ele of deliveryReturnsData[i].data"
+      >
+        {{ ele.method | capFirst }}
+      </li>
+    </ul>
+  </div>
+  <div class="additional">
+    <h5 class="additional_info">*{{ additionalReturns | capFirst }}</h5>
+    <button class="additional_btn">{{ "formularz zwrotu" | capFirst }}</button>
+  </div>
+</section>

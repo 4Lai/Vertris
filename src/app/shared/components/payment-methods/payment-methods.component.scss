@@ -1,0 +1,28 @@
+.payment-methods {
+  margin-bottom: 5rem;
+  &-title {
+    color: #000;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: calc(45%) calc(45%);
+    row-gap: 5rem;
+    justify-content: space-evenly;
+    &-item {
+      &_subtitle {
+        color: #000;
+        font-size: 3rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+      }
+      &_desc {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
