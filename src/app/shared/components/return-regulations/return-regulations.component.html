@@ -1,0 +1,14 @@
+<section class="return-regulations" id="regulamin-reklamacji">
+  <h1 class="return-regulations-title">{{ regData()[0].title | capFirst }}</h1>
+  <ul class="return-regulations-list">
+    <li
+      *ngFor="let reg of regData()[0].data; let i = index"
+      class="return-regulations-list_item"
+    >
+      <p class="return-regulations-list_item_text">
+       <strong class="s">{{ i + 1 }}.</strong> {{ reg.regulation | capFirst }}
+      </p>
+    </li>
+  </ul>
+</section>
+

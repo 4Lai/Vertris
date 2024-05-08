@@ -29,4 +29,8 @@ export class NavBarComponent implements OnInit {
     this.linksData = this.navBarService.navBarContent;
     this.curRoute = this.router.url;
   }
+
+  routeAboutUs() {
+    this.router.navigate(['o-nas'], { fragment: 'salon' });
+  }
 }

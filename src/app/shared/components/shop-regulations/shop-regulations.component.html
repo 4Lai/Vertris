@@ -1,0 +1,15 @@
+<section class="shop-regulations" id="regulamin-sklepu">
+  <h1 class="shop-regulations-title">
+    {{ regulationsArr()[0].title | capFirst }}
+  </h1>
+  <ul class="shop-regulations-list">
+    <li
+      class="shop-regulations-list_item"
+      *ngFor="let reg of regulationsArr()[0].data; let i = index"
+    >
+      <p class="shop-regulations-list_item_text">
+       <strong class="s">{{ i + 1 }}.</strong> {{ reg.regulation | capFirst }}
+      </p>
+    </li>
+  </ul>
+</section>

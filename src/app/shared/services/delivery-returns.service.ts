@@ -13,11 +13,11 @@ export class DeliveryReturnsService {
       data: [
         {
           method:
-            'kupując na naszym portalu możesz skorzystać z bezpłatnej dostawy dla zamówień od 150 PLN na terenie Polski za pośrednictwem kuriera GLS.',
+            'kupując na naszym portalu możesz skorzystać z bezpłatnej dostawy dla zamówień od 150 PLN na terenie Polski za pośrednictwem kuriera SPKA.',
         },
         {
           method:
-            'dla zamówień o wartości poniżej 150 PLN koszt dostawy wynosi 20 PLN zarówno dla kuriera GLS i jest doliczany do zamówienia.',
+            'dla zamówień o wartości poniżej 150 PLN koszt dostawy wynosi 20 PLN zarówno dla kuriera SPKA i jest doliczany do zamówienia.',
         },
         {
           method: 'dostawa kurierska realizowana jest tylko w dni robocze.',

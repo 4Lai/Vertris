@@ -84,27 +84,24 @@ li {
 
 .flex {
   display: flex;
-  // column-gap: 8rem;
 }
 
 .absolute {
   display: flex;
   align-items: center;
   column-gap: 1rem;
-  // margin-right: 3rem;
+  cursor: pointer;
 }
 
 .icon {
   color: #000;
   font-size: 3rem;
-  // color: #fff;
 }
 
 .icon-text {
   color: #000;
   font-size: 1.6rem;
   font-weight: 200;
-  // color: #fff;
 }
 
 .margin-r {

@@ -27,7 +27,7 @@
         Vertris
       </p>
     </div>
-    <a routerLink="" class="absolute margin-r">
+    <a class="absolute margin-r">
       <span
         class="material-symbols-outlined icon"
         [ngClass]="{ hidden: windowHeight < 1 && curRoute === '/' }"
@@ -37,6 +37,7 @@
       <span
         class="icon-text"
         [ngClass]="{ hidden: windowHeight < 1 && curRoute === '/' }"
+        (click)="routeAboutUs()"
         >{{ "znajdź salon" | capFirst }}</span
       >
     </a>
