@@ -11,7 +11,6 @@ import { AllProductsService } from 'src/app/shared/services/all-products.service
 export class NewsPageComponent implements OnInit {
   newsPageArr: SingleProduct[] = [];
   title: string = '';
-  // subtitle: string = '';
   isOpenedFilter: boolean = false;
 
   constructor(
@@ -42,12 +41,25 @@ export class NewsPageComponent implements OnInit {
   }
 
   filterArr(value: any) {
-    // this.neckArr = this.necklacesService.neckData;
-    let filterData = this.allProductsService.allProducts.filter((val) => {
-      return val.newCollection === true;
-    });
+    // let filterData = this.allProductsService.allProducts.filter((val) => {
+    //   return val.newCollection === true;
+    // });
 
-    this.newsPageArr = filterData;
+    // this.newsPageArr = filterData;
+    if (this.activatedRoute.snapshot.url.length === 2) {
+      let filterDataYoshitsu = this.allProductsService.allProducts.filter(
+        (val) => {
+          return val.yoshitsu === true;
+        }
+      );
+      this.newsPageArr = filterDataYoshitsu;
+    } else {
+      let filterData = this.allProductsService.allProducts.filter((val) => {
+        return val.newCollection === true;
+      });
+
+      this.newsPageArr = filterData;
+    }
     let filteredOffers = this.newsPageArr.filter((el) => {
       let match = [];
       if (value.type) {

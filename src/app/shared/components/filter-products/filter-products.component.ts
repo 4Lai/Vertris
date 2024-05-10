@@ -40,11 +40,24 @@ export class FilterProductsComponent implements OnInit {
       });
       this.allProds = type;
       this.allProds = this.removeDuplicates(this.allProds);
-    } else if (this.path === 'nowości') {
+    } else if (
+      this.path === 'nowości' &&
+      this.activatedRoute.snapshot.url.length < 2
+    ) {
       let newColl = this.allProds.filter((val: any) => {
         return val.newCollection === true;
       });
       this.allProds = newColl;
+      let type = this.allProds.map((el: any) => {
+        return el.type;
+      });
+      this.allProds = type;
+      this.allProds = this.removeDuplicates(this.allProds);
+    } else if (this.activatedRoute.snapshot.url.length === 2) {
+      let yoshitsu = this.allProds.filter((val: any) => {
+        return val.yoshitsu === true;
+      });
+      this.allProds = yoshitsu;
       let type = this.allProds.map((el: any) => {
         return el.type;
       });
