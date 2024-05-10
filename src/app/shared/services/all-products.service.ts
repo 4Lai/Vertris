@@ -5,6 +5,7 @@ import { NecklaceService } from './necklace.service';
 import { WatchesService } from './watches.service';
 import { SingleProduct } from '../interfaces/single-product';
 import { AccessoriesService } from './accessories.service';
+import { GiftsService } from './gifts.service';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +16,8 @@ export class AllProductsService {
     private earingsService: EaringsService,
     private necklaceSerice: NecklaceService,
     private watchesService: WatchesService,
-    private accessoriesService: AccessoriesService
+    private accessoriesService: AccessoriesService,
+    private giftService: GiftsService
   ) {}
 
   allProducts: SingleProduct[] = [
@@ -24,5 +26,6 @@ export class AllProductsService {
     ...this.necklaceSerice.neckData,
     ...this.watchesService.watchesData,
     ...this.accessoriesService.accData,
+    ...this.giftService.giftsData
   ];
 }

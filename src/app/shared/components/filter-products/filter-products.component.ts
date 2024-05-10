@@ -33,17 +33,28 @@ export class FilterProductsComponent implements OnInit {
   ngOnInit(): void {
     this.allProds = this.allProductsService.allProducts;
     this.path = this.activatedRoute.snapshot.url[0].path;
-    if (this.path != 'produkty') {
-      let fil = this.allProds.filter((val: any) => {
-        return val.path === this.path;
+
+    if (this.path === 'produkty') {
+      let type = this.allProds.map((el: any) => {
+        return el.type;
       });
-      this.allProds = fil;
+      this.allProds = type;
+      this.allProds = this.removeDuplicates(this.allProds);
+    } else if (this.path === 'nowości') {
+      let newColl = this.allProds.filter((val: any) => {
+        return val.newCollection === true;
+      });
+      this.allProds = newColl;
       let type = this.allProds.map((el: any) => {
         return el.type;
       });
       this.allProds = type;
       this.allProds = this.removeDuplicates(this.allProds);
     } else {
+      let fil = this.allProds.filter((val: any) => {
+        return val.path === this.path;
+      });
+      this.allProds = fil;
       let type = this.allProds.map((el: any) => {
         return el.type;
       });

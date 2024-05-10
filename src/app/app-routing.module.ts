@@ -14,6 +14,8 @@ import { SingleProductDetailsComponent } from './pages/single-product-details/si
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CustomerServiceComponent } from './pages/customer-service/customer-service.component';
 import { RegulationsComponent } from './pages/regulations/regulations.component';
+import { GiftComponent } from './pages/gift/gift.component';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,10 @@ const routes: Routes = [
   { path: 'zegarki/:id', component: SingleProductDetailsComponent },
   { path: 'akcesoria', component: AccessoriesComponent },
   { path: 'akcesoria/:id', component: SingleProductDetailsComponent },
+  { path: 'karty', component: GiftComponent },
+  { path: 'karty/:id', component: SingleProductDetailsComponent },
+  { path: 'nowości', component: NewsPageComponent },
+  { path: 'nowości/yoshitsu', component: NewsPageComponent },
   { path: 'o-nas', component: AboutUsComponent },
   { path: 'obsługa-klienta', component: CustomerServiceComponent },
   { path: 'regulaminy', component: RegulationsComponent },

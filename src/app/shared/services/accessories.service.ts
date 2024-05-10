@@ -6,6 +6,7 @@ import { SingleProduct } from '../interfaces/single-product';
 })
 export class AccessoriesService {
   constructor() {}
+  
   accData: SingleProduct[] = [
     {
       productTitle: 'portfel',

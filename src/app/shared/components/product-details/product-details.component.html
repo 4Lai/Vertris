@@ -1,6 +1,6 @@
 <section class="product-details">
   <div class="product-details-images">
-    <div class="product-details-images-multi">
+    <div class="product-details-images-multi" >
       <img
         class="product-details-images-multi-img"
         (click)="changeImage(singleProd[0].productImage)"
@@ -21,8 +21,8 @@
       />
       <img
         class="product-details-images-multi-img"
-        (click)="changeImage(allProds[0].productImage)"
-        src="{{ allProds[0].productImage }}"
+        (click)="changeImage(singleProd[0].productImage)"
+        src="{{ singleProd[0].productImage }}"
         alt=""
       />
     </div>
@@ -60,7 +60,7 @@
     </p>
 
     <div class="icons">
-      <div class="icons-c">
+      <div class="icons-c" *ngIf="curRoute != 'karty'">
         <span class="material-symbols-outlined icon">
           featured_seasonal_and_gifts
         </span>

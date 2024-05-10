@@ -18,6 +18,7 @@ export class EaringsService {
       discount: false,
       bestseller: false,
       path: 'kolczyki',
+      newCollection: true,
     },
     {
       productTitle: 'kolczyki 2.0 cm',
@@ -62,6 +63,8 @@ export class EaringsService {
       discount: false,
       bestseller: false,
       path: 'kolczyki',
+      newCollection: true,
+      yoshitsu: true
     },
     {
       productTitle: 'kolczyki',
@@ -95,6 +98,8 @@ export class EaringsService {
       discount: false,
       bestseller: false,
       path: 'kolczyki',
+      newCollection: true,
+      yoshitsu: true
     },
     {
       productTitle: 'kolczyki',

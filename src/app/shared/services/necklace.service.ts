@@ -18,6 +18,7 @@ export class NecklaceService {
       discount: false,
       bestseller: false,
       path: 'naszyjniki',
+      newCollection: true,
     },
     {
       productTitle: 'naszyjnik',
@@ -51,6 +52,8 @@ export class NecklaceService {
       discount: false,
       bestseller: false,
       path: 'naszyjniki',
+      newCollection: true,
+      yoshitsu: true,
     },
     {
       productTitle: 'naszyjnik',
@@ -73,6 +76,8 @@ export class NecklaceService {
       discount: false,
       bestseller: false,
       path: 'naszyjniki',
+      newCollection: true,
+      yoshitsu: true,
     },
     {
       productTitle: 'naszyjnik',
@@ -139,6 +144,8 @@ export class NecklaceService {
       discount: false,
       bestseller: false,
       path: 'naszyjniki',
+      newCollection: true,
+      yoshitsu: true,
     },
   ];
 }

@@ -54,6 +54,8 @@ import { PaymentMethodsComponent } from './shared/components/payment-methods/pay
 import { RegulationsComponent } from './pages/regulations/regulations.component';
 import { ShopRegulationsComponent } from './shared/components/shop-regulations/shop-regulations.component';
 import { ReturnRegulationsComponent } from './shared/components/return-regulations/return-regulations.component';
+import { GiftComponent } from './pages/gift/gift.component';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +109,8 @@ import { ReturnRegulationsComponent } from './shared/components/return-regulatio
     RegulationsComponent,
     ShopRegulationsComponent,
     ReturnRegulationsComponent,
+    GiftComponent,
+    NewsPageComponent,
   ],
   imports: [
     BrowserModule,

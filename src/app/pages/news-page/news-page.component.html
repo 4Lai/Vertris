@@ -1,0 +1,19 @@
+<app-nav-bar></app-nav-bar>
+<section class="news-page">
+  <app-dynamic-products-header
+    [dynTitle]="title"
+    [numberOfProds]="newsPageArr.length"
+    (popUpOpened)="openPop($event)"
+  ></app-dynamic-products-header>
+  <div>
+    <app-product-list [prodArr]="newsPageArr"></app-product-list>
+  </div>
+</section>
+<app-footer></app-footer>
+<app-made-by></app-made-by>
+<app-filter-products
+  (closeVal)="openPop($event)"
+  class="hidden"
+  [ngClass]="isOpenedFilter === true ? 'visible' : 'hidden'"
+  (form)="filterArr($event)"
+></app-filter-products>

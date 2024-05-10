@@ -27,6 +27,7 @@ import {
   ],
 })
 export class ProductDetailsComponent implements OnInit, OnDestroy {
+  curRoute: string = '';
   allProds: SingleProduct[] = [];
   singleProd: SingleProduct[] = [];
   currentImage: WritableSignal<string> = signal('');
@@ -43,6 +44,7 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.curRoute = this.activatedRoute.snapshot.url[0].path;
     this.sub = this.activatedRoute.params.subscribe((val) => {
       this.allProds = this.allProductsService.allProducts;
       this.idOfProd.set(this.activatedRoute.snapshot.url[1].path);

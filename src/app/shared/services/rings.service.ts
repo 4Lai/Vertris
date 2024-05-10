@@ -40,6 +40,7 @@ export class RingsService {
       discount: false,
       bestseller: false,
       path: 'pierścionki',
+      newCollection: true,
     },
     {
       productTitle: 'pierścień',
@@ -51,6 +52,7 @@ export class RingsService {
       discount: false,
       bestseller: false,
       path: 'pierścionki',
+      newCollection: true,
     },
     {
       productTitle: 'pierścień',
@@ -62,6 +64,7 @@ export class RingsService {
       discount: true,
       bestseller: false,
       path: 'pierścionki',
+      newCollection: true,
     },
     {
       productTitle: 'pierścień',
@@ -95,6 +98,7 @@ export class RingsService {
       discount: false,
       bestseller: false,
       path: 'pierścionki',
+      newCollection: true,
     },
     {
       productTitle: 'pierścień',

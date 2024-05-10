@@ -14,7 +14,7 @@ export class NavBarService {
     { link: '/kolczyki', text: 'kolczyki' },
     { link: '/pierścionki', text: 'pierścionki' },
     { link: '/zegarki', text: 'zegarki' },
-    { link: '/karty-podarunkowe', text: 'karty podarunkowe' },
+    { link: '/karty', text: 'karty podarunkowe' },
     { link: '/akcesoria', text: 'akcesoria' },
   ];
 }

@@ -5,7 +5,9 @@ export interface SingleProduct {
   productImage: string;
   id: number;
   discountValue: number;
-  discount: boolean
+  discount: boolean;
   bestseller: boolean;
   path: string;
+  newCollection?: boolean;
+  yoshitsu?: boolean;
 }
