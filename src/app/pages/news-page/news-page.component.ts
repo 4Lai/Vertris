@@ -41,11 +41,6 @@ export class NewsPageComponent implements OnInit {
   }
 
   filterArr(value: any) {
-    // let filterData = this.allProductsService.allProducts.filter((val) => {
-    //   return val.newCollection === true;
-    // });
-
-    // this.newsPageArr = filterData;
     if (this.activatedRoute.snapshot.url.length === 2) {
       let filterDataYoshitsu = this.allProductsService.allProducts.filter(
         (val) => {

@@ -6,7 +6,6 @@ export const intersect = function () {
       if (entry.isIntersecting) {
         entry.target.classList.add('sticky');
       } else {
-        // entry.target.classList.remove('show');
       }
     });
   });

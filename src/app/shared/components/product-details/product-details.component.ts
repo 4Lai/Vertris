@@ -10,7 +10,6 @@ import { AllProductsService } from '../../services/all-products.service';
 import { ActivatedRoute } from '@angular/router';
 import {
   animate,
-  state,
   style,
   transition,
   trigger,
