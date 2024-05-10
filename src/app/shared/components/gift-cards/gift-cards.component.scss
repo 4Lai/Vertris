@@ -478,3 +478,15 @@
     width: calc(90% - 3.2rem);
   }
 }
+
+@media (min-width: 2559px) {
+  .gift-cards_left-container_title {
+    font-size: 6.6rem;
+  }
+  .gift-cards_left-container_text {
+    font-size: 3rem;
+  }
+  .gift-cards_left-container_button-link {
+    font-size: 2.6rem;
+  }
+}

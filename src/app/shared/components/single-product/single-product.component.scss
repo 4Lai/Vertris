@@ -131,3 +131,25 @@
     width: 100%;
   }
 }
+
+@media (min-width: 2559px) {
+  .single-product_link-bestseller {
+    font-size: 2.2rem;
+  }
+
+  .single-product_seclink-title {
+    font-size: 2.6rem;
+  }
+  .single-product_seclink-type {
+    font-size: 2.2rem;
+  }
+  .single-product_price {
+    font-size: 2.4rem;
+  }
+  .single-product_new-price {
+    font-size: 2.4rem;
+  }
+  .single-product_link-discount {
+    font-size: 2.6rem;
+  }
+}

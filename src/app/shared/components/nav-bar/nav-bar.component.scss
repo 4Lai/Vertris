@@ -123,3 +123,29 @@ li {
     }
   }
 }
+
+@media (min-width: 2559px) {
+  .nav-bar-container {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+  }
+
+  ul {
+    padding: 2.1rem;
+  }
+
+  .nav-bar-container_title {
+    font-size: 2.6rem;
+  }
+
+  li {
+    font-size: 2.3rem;
+  }
+
+  .icon {
+    font-size: 3.6rem;
+  }
+
+  .icon-text {
+    font-size: 2.2rem;
+  }
+}

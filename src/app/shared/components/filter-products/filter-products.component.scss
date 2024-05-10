@@ -252,3 +252,56 @@ hr {
     transform: translate(-50%, -60%);
   }
 }
+
+@media (min-width: 2559px) {
+  .filter-products {
+    height: 55%;
+  }
+  .filter-products-title {
+    font-size: 3.6rem;
+  }
+  .form_price-label {
+    font-size: 2.6rem;
+  }
+  .form_price_inputs-i {
+    font-size: 2.2rem;
+  }
+  .form_type-label {
+    font-size: 2.6rem;
+  }
+  .form_type_select {
+    font-size: 2.2rem;
+  }
+  .form_type_select-option {
+    font-size: 2.2rem;
+  }
+  .form_sale-input {
+    width: 23px;
+    height: 23px;
+  }
+  .form_sale-label {
+    font-size: 2.2rem;
+  }
+  .form_bestseller-input {
+    width: 23px;
+    height: 23px;
+  }
+  .form_bestseller-label {
+    font-size: 2.2rem;
+  }
+  .form_btn {
+    font-size: 2.6rem;
+  }
+  .form_price {
+    margin-bottom: 6rem;
+  }
+  .form_type {
+    margin-bottom: 6rem;
+  }
+  .form_bestseller {
+    margin-bottom: 6rem;
+  }
+  .icon {
+    font-size: 4rem;
+  }
+}

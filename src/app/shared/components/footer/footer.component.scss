@@ -146,3 +146,12 @@ li {
     grid-template-columns: 100%;
   }
 }
+
+@media (min-width: 2559px) {
+  .footer-header_title {
+    font-size: 2.6rem;
+  }
+  .footer-header {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+  }
+}

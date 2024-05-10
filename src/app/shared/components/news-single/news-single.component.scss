@@ -280,3 +280,18 @@
     float: right;
   }
 }
+
+@media (min-width: 2559px) {
+  .news-single-right_title {
+    font-size: 4.2rem;
+  }
+  .news-single-right_type {
+    font-size: 3rem;
+  }
+  .news-single-right_price {
+    font-size: 4.2rem;
+  }
+  .news-single-right_btn {
+    font-size: 2.6rem;
+  }
+}

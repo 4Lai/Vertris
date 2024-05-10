@@ -100,3 +100,18 @@ a:hover {
     height: 500px;
   }
 }
+
+@media (min-width: 2559px) {
+  .see-also-single {
+    height: 1000px;
+  }
+  .see-also-single_img {
+    height: 1000px;
+  }
+  .bg {
+    height: 1000px;
+  }
+  .see-also-single_title {
+    font-size: 4.2rem;
+  }
+}

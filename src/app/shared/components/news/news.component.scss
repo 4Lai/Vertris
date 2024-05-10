@@ -132,3 +132,12 @@
     width: calc(90% - 3.2rem);
   }
 }
+
+@media (min-width: 2559px) {
+  .news-header_title {
+    font-size: 4.2rem;
+  }
+  .news-footer_link_title {
+    font-size: 3.6rem;
+  }
+}

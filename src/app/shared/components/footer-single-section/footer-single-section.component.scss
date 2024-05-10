@@ -39,3 +39,12 @@
 .hidden {
   display: none;
 }
+
+@media (min-width: 2559px) {
+  .footer-single-section_title {
+    font-size: 2.4rem;
+  }
+  .footer-single-section_link-container_link {
+    font-size: 2.2rem;
+  }
+}

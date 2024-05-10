@@ -123,3 +123,22 @@ input:active {
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 2559px) {
+  .newsletter {
+    padding: 3rem 3rem 1rem 3rem;
+    height: 325px;
+  }
+  .newsletter-header_title {
+    font-size: 3.2rem;
+  }
+  .newsletter-header_text {
+    font-size: 2.2rem;
+  }
+  .newsletter-form_input {
+    font-size: 2.2rem;
+  }
+  .newsletter-form_btn {
+    font-size: 2.2rem;
+  }
+}
